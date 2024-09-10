@@ -2,11 +2,11 @@ import { Hero } from "../hero";
 import { Clients } from "../clients";
 export const HeroSection = () => {
   return (
-    <>
-      <section className="w-full py-[130px] px-10 bg-[#10393b]">
+    <div className="w-full bg-[#10393b]">
+      <div className="max-w-[1240px] mx-auto py-[130px] px-4 md:px-4 md:py-[130px]">
         <Hero />
-      </section>
+      </div>
       <Clients />
-    </>
+    </div>
   );
 };

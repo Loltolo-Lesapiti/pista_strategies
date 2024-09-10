@@ -44,11 +44,8 @@ export default function RootLayout({
             <main className="container max-w-full flex-grow bg-[#fffaf1]">
               {children}
             </main>
-            <footer className="relative flex flex-col items-center justify-stretch w-full py-[130px] px-10">
+            <footer className="relative flex flex-col items-center justify-stretch w-full pt-[70px] px-10 bg-[#fffaf1]">
               <FooterComponent />
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-gray-500">
-                &#xA9; 2024 Petro
-              </span>
             </footer>
           </div>
         </Providers>

@@ -9,11 +9,11 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
+      label: "About",
       href: "/docs",
     },
     {
-      label: "Pricing",
+      label: "Services",
       href: "/pricing",
     },
     {
@@ -21,42 +21,30 @@ export const siteConfig = {
       href: "/blog",
     },
     {
-      label: "About",
+      label: "Contact",
       href: "/about",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Home",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "About",
+      href: "/docs",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Services",
+      href: "/pricing",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Blog",
+      href: "/blog",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contact",
+      href: "/about",
     },
   ],
   links: {

@@ -25,7 +25,7 @@ export const Clients = () => {
   }, []);
 
   return (
-    <div className="w-full h-[80px] bg-[#ef8450] overflow-hidden flex justify-center">
+    <div className="w-full h-[90px] bg-[#ef8450] overflow-hidden flex justify-center">
       <div
         className="flex flex-row justify-center items-center animate-scroll"
         style={{

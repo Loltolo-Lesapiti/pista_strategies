@@ -1,23 +1,31 @@
 import Image from "next/image";
+
 import TestimonialSlider from "./slider";
+
 export const Testimonial = () => {
   return (
-    <div className="flex flex-col items-center justify-between gap-4">
-      <div className="text-[#ef8450] font-medium bg-[#ffffff38] text-base uppercase">
-        testimonial
+    <div className="flex flex-col items-center justify-center gap-4 py-8 md:p-8 md:flex flex-row">
+      <div className="text-[#ef8450] font-medium bg-[#ffffff38] text-xs sm:text-sm md:text-base uppercase px-3 py-1 rounded-full">
+        Testimonial
       </div>
-      <h2 className="text-6xl font-semibold text-[#10393b] text-center mb-4">
-        What client say about us
+      <h2 className="text-center mb-2 sm:mb-3 md:mb-8">
+        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#10393b] leading-tight md:w-3/4">
+          What clients say about us
+        </span>
       </h2>
-      <div className="flex flex-row justify-center items-center gap-8">
-        <Image
-          src="/testimonial.webp"
-          alt="Picture of the author"
-          width={500}
-          height={500}
-          className="rounded-[15px]"
-        />
-        <TestimonialSlider />
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-2 sm:gap-8 w-full">
+        <div className="w-full lg:w-1/2 flex justify-center p-0 m-0">
+          <Image
+            src="/testimonial.webp"
+            alt="Testimonial illustration"
+            width={500}
+            height={500}
+            className="rounded-lg sm:rounded-xl md:rounded-2xl w-full max-w-[400px] lg:max-w-[500px] h-auto"
+          />
+        </div>
+        <div className="w-full lg:w-3/5 ml-0 pl-0">
+          <TestimonialSlider />
+        </div>
       </div>
     </div>
   );

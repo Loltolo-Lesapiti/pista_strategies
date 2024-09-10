@@ -71,43 +71,46 @@ const TestimonialSlider: React.FC = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <Card className="w-2/5 bg-white py-[45px] h-[455px] rounded-[15px] px-[80px] ">
-      <CardBody className="flex flex-col items-start justify-center gap-4">
-        <div className="flex justify-center mb-4">
+    <Card
+      className=" w-full flex flex-col bg-white items-center justify-center gap-4 h-[455px]
+      rounded-lg p-8"
+    >
+      <CardBody className="flex flex-col items-start justify-center gap-2 sm:gap-3 md:gap-4">
+        <div className="flex justify-center mb-2 sm:mb-3 md:mb-4">
           {[...Array(5)].map((_, i) => (
             <StarIcon
               key={i}
               filled={i < currentTestimonial.rating}
-              className={
+              className={`w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 ${
                 i < currentTestimonial.rating
                   ? "text-yellow-400"
                   : "text-gray-300"
-              }
+              }`}
             />
           ))}
         </div>
-        <p className="font-normal text-base max-w-fit text-[#7b7b7b] normal-case mt-0 capitalize">
-          "{currentTestimonial.quote}"
+        <p className="font-normal text-sm sm:text-base max-w-fit text-[#7b7b7b] normal-case mt-0 capitalize">
+          &ldquo;{currentTestimonial.quote}&rdquo;
         </p>
-        <h4 className="text=[#10393b] text-xl font-semibold capitalize">
+        <h4 className="text-[#10393b] text-lg sm:text-xl font-semibold capitalize">
           {currentTestimonial.author}
         </h4>
-        <p className="font-normal text-base max-w-fit text-[#7b7b7b] normal-case mt-0 capitalize">
+        <p className="font-normal text-sm sm:text-base max-w-fit text-[#7b7b7b] normal-case mt-0 capitalize">
           {currentTestimonial.position}
         </p>
       </CardBody>
       <CardFooter className="justify-end pt-0">
         <button
           onClick={prevSlide}
-          className="mx-2 p-2 rounded-full border-[2px] border-[#ef8450]"
+          className="mx-1 sm:mx-2 p-1 sm:p-2 rounded-full border-2 border-[#ef8450]"
         >
-          <ChevronIcon className="w-6 h-6" />
+          <ChevronIcon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
         </button>
         <button
           onClick={nextSlide}
-          className="mx-2 p-2 rounded-full border-[2px] border-[#ef8450]"
+          className="mx-1 sm:mx-2 p-1 sm:p-2 rounded-full border-2 border-[#ef8450]"
         >
-          <ChevronRightIcon className="w-6 h-6" />
+          <ChevronRightIcon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
         </button>
       </CardFooter>
     </Card>

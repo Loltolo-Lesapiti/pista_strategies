@@ -3,7 +3,7 @@ import { Values } from "../values";
 
 export const AboutSection = () => {
   return (
-    <section className="w-full py-[130px] px-10">
+    <section className="w-full px-4 py-[130px] md:px-10">
       <About />
       <Values />
     </section>
