@@ -1,53 +1,41 @@
-# Next.js & NextUI Template
+# Pista Strategies: Your partner from an idea to a market leader.
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+Pista Strategies is a business writing organization that helps small and medium sized businesses and professionals in putting their foot forward. We achieve your goals by developing personalized business plans, proposals, conducting web research, pitch deck among other services.
+We are a group of experienced consultants with proven track record of success in the field.
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
+## Our Mission:
 
-## Technologies Used
+## Our values
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+- Confidentiality
+- Professionalism
+- Simplicity
+- Efficiency
 
-## How to Use
+## Our Story
 
-### Use the template with create-next-app
+After working for half a decade with small and medium sized businesses, founder saw how hard founder and visionary entrepreneurs missed opportunities for the inability to put their business ideas down through writing, entrepreneurs who had billion-dollar ideas missing important investments for the inability to capture their value proposition to investors. As a result, our founder came up with Pista Strategies to help small business owners thrive. Our approach keeps your company at the center of attention to get investors, win grants, increase brand awareness and make others understand your value to your customers with ease.
+Why Work with us
+Our unique approach allows our clients to rapidly scale their business,
 
-To create a new project based on this template using `create-next-app`, run the following command:
+## Our Services
 
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
+YBusiness Plan Development:
+We will help you create a customized comprehensive business plan, including market research, financial projections, Market Analysis, and strategic Operational plan
 
-### Install dependencies
+Proposal Writing:
+We craft proposals for funding, partnerships, contracts and others.
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+Grants Writing
+We are specialized in writing grant proposals for non-profits and others
 
-```bash
-npm install
-```
+Pitch Deck Creation:
+We design unique pitch decks for presentation to investors and other stakeholders
+Consulting and Advisory:
+We offer consulting services to revise and improve existing business plans and proposals.
 
-### Run the development server
+Additional strategic documents:
+We help in writing other strategic documents such as operational plans, marketing strategies and executive summaries.
 
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+Contact us: Email, phone number.
+Get in touch Today: This should be a button for the customer to fill in where we will get the notification.
