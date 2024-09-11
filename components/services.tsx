@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { ArrowIcon } from "./icons";
+
 export const Services = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center gap-4 px-8">
@@ -38,7 +40,10 @@ export const Services = () => {
               We Improving website visibility on search engines.
             </p>
             <div className="text-[#ef8450] hover:text-black text-sm lg:text-base font-normal flex flex-row justify-start items-center gap-[5px]">
-              <Link href="/">Read more</Link>
+              <Link href="/" className="flex items-center">
+                Read more
+                <ArrowIcon />
+              </Link>
             </div>
           </div>
         ))}
