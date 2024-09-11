@@ -1,11 +1,11 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import { Syne, Manrope } from "next/font/google";
 
-export const fontSans = FontSans({
+export const fontHeading = Syne({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-heading",
 });
 
-export const fontMono = FontMono({
+export const fontBody = Manrope({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-body",
 });

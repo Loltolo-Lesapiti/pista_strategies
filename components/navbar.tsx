@@ -8,26 +8,64 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 
 import { siteConfig } from "@/config/site";
-import { GithubIcon, Logo } from "@/components/icons";
+import { Logo } from "@/components/icons";
+import CustomButton from "@/components/buttonUi";
 
 export const Navbar = () => {
   const [activeItem, setActiveItem] = useState("Home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
-  const handleItemClick = (label: string) => {
+  const handleItemClick = (label: string, href: string) => {
     setActiveItem(label);
+    setIsMenuOpen(false);
+
+    if (href.startsWith("/#")) {
+      // Smooth scroll to section
+      const sectionId = href.split("#")[1];
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      // Navigate to new page
+      router.push(href);
+    }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      let currentActiveSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - 60) {
+          // 60px offset for navbar height
+          currentActiveSection = section.getAttribute("id") || "";
+        }
+      });
+
+      setActiveItem(currentActiveSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <NextUINavbar
+      className="fixed top-0 left-0 right-0 bg-[#10393b] text-white pt-4 pb-8 z-50 mb-0"
       maxWidth="xl"
-      position="sticky"
-      className="mb-0 pb-0 bg-[#10393b] text-white to-0 pt-4 right-0 z-50"
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -45,10 +83,10 @@ export const Navbar = () => {
         <ul className="hidden lg:flex gap-8">
           {siteConfig.navItems.map((item, index) => (
             <NavbarItem key={`${item}-${index}`}>
-              <NextLink
-                onClick={() => handleItemClick(item.label)}
+              <Link
+                onClick={() => handleItemClick(item.label, item.href)}
                 className={`text-lg ${
-                  item.label === activeItem
+                  item.label.toLowerCase() === activeItem
                     ? "text-[#ef8450]"
                     : item.label === "Free Consult"
                     ? "text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
@@ -57,24 +95,13 @@ export const Navbar = () => {
                 href={item.href}
               >
                 {item.label}
-              </NextLink>
+              </Link>
             </NavbarItem>
           ))}
         </ul>
 
         <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
-            as={Link}
-            className="relative text-base font-medium text-white bg-[#10393b] border-2 rounded-lg border-[#ef8450] overflow-hidden transition-colors duration-300 ease-in-out group"
-            href="/"
-            variant="flat"
-          >
-            <span className="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-[#10393b]">
-              Free Consult
-            </span>
-            <span className="absolute inset-x-0 bottom-0 h-0 bg-white transition-all duration-300 ease-in-out group-hover:h-full" />
-          </Button>
+          <CustomButton backgroundColor="#10393b" body="Free Consult" />
         </NavbarItem>
       </NavbarContent>
 
@@ -84,38 +111,27 @@ export const Navbar = () => {
         </div>
       </NavbarContent>
 
-      <NavbarMenu className="bg-[#10393b] text-white border-white ">
+      <NavbarMenu className="bg-[#10393b] text-white border-white pt-16">
         <div className="mx-4 mt-4 flex flex-col gap-10">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                href="#"
-                onClick={() => handleItemClick(item.label)}
+                onClick={() => handleItemClick(item.label, item.href)}
                 className={`text-lg ${
-                  item.label === activeItem
+                  item.label.toLowerCase() === activeItem
                     ? "text-[#ef8450]"
                     : item.label === "Free Consult"
                     ? "text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
                     : "text-white hover:text-[#ef8450]"
                 }`}
+                href={item.href}
               >
                 {item.label}
               </Link>
             </NavbarMenuItem>
           ))}
           <NavbarMenuItem className="flex md:hidden ">
-            <Button
-              isExternal
-              as={Link}
-              className="relative text-base font-medium text-white bg-[#10393b] border-2 rounded-lg border-[#ef8450] overflow-hidden transition-colors duration-300 ease-in-out group"
-              href="/"
-              variant="flat"
-            >
-              <span className="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-[#10393b]">
-                Free Consult
-              </span>
-              <span className="absolute inset-x-0 bottom-0 h-0 bg-white transition-all duration-300 ease-in-out group-hover:h-full" />
-            </Button>
+            <CustomButton backgroundColor="#10393b" body="Free Consult" />
           </NavbarMenuItem>
         </div>
       </NavbarMenu>

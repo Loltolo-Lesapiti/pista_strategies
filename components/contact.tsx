@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/button";
+import CustomButton from "./buttonUi";
 
 export const Contact = () => {
   return (
@@ -16,12 +16,8 @@ export const Contact = () => {
           digital success because of our quality and service.
         </p>
         <div className="flex flex-row gap-2 sm:gap-4 justify-center items-center w-full">
-          <Button className="text-xs sm:text-sm md:text-base font-normal bg-[#ef8450] text-white p-2 sm:p-4 md:p-6 lg:p-8 capitalized flex-1 sm:flex-none max-w-[180px]">
-            Get Started
-          </Button>
-          <Button className="text-xs sm:text-sm md:text-base font-normal border-[#ef8450] bg-[#10393b] border-2 text-white p-2 sm:p-4 md:p-6 lg:p-8 capitalized flex-1 sm:flex-none max-w-[180px]">
-            Contact Us
-          </Button>
+          <CustomButton backgroundColor="#ef8450" body=" Get Started" />
+          <CustomButton backgroundColor="#10393b" body="Contact Us" />
         </div>
       </div>
     </>

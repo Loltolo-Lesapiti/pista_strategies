@@ -8,10 +8,10 @@ export const Services = () => {
         <div className="text-[#ef8450] font-medium py-2 px-4 lg:px-8 bg-[#ffffff38] text-sm lg:text-base uppercase">
           Services
         </div>
-        <h2 className="text-4xl lg:text-6xl font-bold mt-4 lg:mt-[20px] mb-[10px] text-[#10393b]">
+        <h2 className="text-4xl lg:text-6xl font-bold mt-4 lg:mt-[20px] mb-[10px] text-[#10393b] md:w-2/5">
           Our capabilities
         </h2>
-        <p className="font-normal text-sm lg:text-base mt-[10px] mb-[35px] max-w-fit text-[#7b7b7b] normal-case">
+        <p className="font-normal text-sm lg:text-base mt-[10px] mb-[35px] max-w-fit text-[#7b7b7b] normal-case md:pr-4">
           Transforming your digital environment with creative solutions and
           strategic approaches for unrivaled success.
         </p>
@@ -37,7 +37,7 @@ export const Services = () => {
             <p className="text-sm lg:text-base font-normal text-[#7b7b7b] mb-[14px]">
               We Improving website visibility on search engines.
             </p>
-            <div className="text-[#ef8450] text-sm lg:text-base font-normal flex flex-row justify-start items-center gap-[5px]">
+            <div className="text-[#ef8450] hover:text-black text-sm lg:text-base font-normal flex flex-row justify-start items-center gap-[5px]">
               <Link href="/">Read more</Link>
             </div>
           </div>
