@@ -35,16 +35,19 @@ export const Hero = () => {
     <div className="flex flex-col md:flex-row md:items-start justify-center md:gap-16 relative pt-[110px] pb -[80px]">
       <div className="flex flex-col items-start justify-items-start md:w-2/5 shrink-0 px-4 md:px-0 md:pt-8">
         <h3 className="text-white font-medium py-2 px-8 bg-[#ffffff38] text-base rounded-lg max-w-fit uppercase mb-6">
-          welcome to gradia
+          Welcome to Pista Strategies
         </h3>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white capitalize">
-          Take a Boost for Your Business
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          Your Parner from an Idea to Market Leader
         </h1>
         <p className="font-normal text-base mb-8 max-w-fit text-[#ffffffb8] normal-case">
-          A top US specialty digital agency with a focus on creative growth
-          tactics and customized solutions.
+          We Brainstorm, Analyze and Develop
         </p>
-        <CustomButton backgroundColor="#ef8450" body=" Get Started" />
+        <CustomButton
+          backgroundColor="#ef8450"
+          body=" Get Started"
+          href="/contact"
+        />
       </div>
       <div className="relative w-full max-w-3xl mx-auto mt-8 md:mt-0">
         <div

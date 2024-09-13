@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { Button } from "@nextui-org/button";
 
 import CustomButton from "./buttonUi";
 
@@ -32,14 +31,21 @@ export const About = () => {
           About
         </div>
         <h2 className="text-4xl md:text-6xl font-bold mt-[20px] mb-[10px] text-[#10393b]">
-          We are the best digital agency for business
+          Who We Are
         </h2>
         <p className="font-normal text-base mt-[10px] mb-[35px] max-w-fit text-[#7b7b7b] normal-case text-justify">
-          With a committed group of experts, we guarantee precise financial
-          reporting, adherence to rules and guidelines, and strategic advice
-          catered to your particular requirements.
+          Pista Strategies is a business writing agency committed to helping
+          small and medium-sized businesses achieve their full potential. With a
+          team of experienced consultants and a results-driven approach, we
+          consistently exceed expectations and empower our clients to succeed.
+          Guided by professionalism, confidentiality, and efficiency, we
+          simplify the path to business growth and success.
         </p>
-        <CustomButton backgroundColor="#ef8450" body="More about us" />
+        <CustomButton
+          backgroundColor="#ef8450"
+          body="More about us"
+          href="/about"
+        />
       </div>
       <div className="flex justify-center items-center w-full md:w-1/2 mb-8 md:mb-0 relative">
         <div

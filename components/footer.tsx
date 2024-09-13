@@ -9,9 +9,9 @@ const FooterComponent = () => {
         <div className="col-span-1 md:col-span-1">
           <div className="flex items-center mb-4">
             <Logo />
-            <h3 className="ml-2 text-xl font-bold">Gradia</h3>
+            <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3>
           </div>
-          <p className="text-sm text-[#7b7b7b]">
+          <p className="text-base text-[#7b7b7b]">
             Your digital vision, our creative mission, partner with us to build
             brands that thrive online with cutting-edge technology and
             insightful marketing.
@@ -26,7 +26,7 @@ const FooterComponent = () => {
                 <li key={item}>
                   <Link
                     href={`/${item.toLowerCase().replace(" ", "-")}`}
-                    className="text-sm text-[#7b7b7b] hover:text-gray-900"
+                    className="text-base text-[#7b7b7b] hover:text-gray-900"
                   >
                     {item}
                   </Link>
@@ -58,7 +58,7 @@ const FooterComponent = () => {
           <h5 className="text-[#10393b] text-lg font-semibold mb-4">
             Newsletter
           </h5>
-          <p className="text-sm text-[#7b7b7b] mb-4">
+          <p className="text-base text-[#7b7b7b] mb-4">
             Subscribe to get a bunch of helpful stuff sent to your inbox
             directly.
           </p>
@@ -66,11 +66,11 @@ const FooterComponent = () => {
             <input
               type="email"
               placeholder="Your mail here"
-              className="px-4 py-2 mb-2 text-sm text-gray-700 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="px-4 py-2 mb-2 text-base text-gray-700 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
             <button
               type="submit"
-              className="px-4 py-2 text-sm text-white bg-orange-400 rounded-md hover:bg-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="px-4 py-2 text-base text-white bg-orange-400 rounded-md hover:bg-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-400"
             >
               Submit
             </button>

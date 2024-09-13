@@ -1,8 +1,10 @@
 import Image from "next/image";
 
+import { IndustryIcon, ConsultingIcon, ValueCreationIcon } from "./icons";
+
 export default function Choose() {
   return (
-    <div className="flex flex-col gap-8  md:flex-row justify-between items-center gap-8 md:px-0">
+    <div className="flex flex-col gap-8 md:flex-row justify-between items-center md:px-0">
       <div className="flex flex-col justify-center items-center w-full md:w-1/2 gap-4 relative mb-16 md:mb-0 ">
         <Image
           src="/choose.webp"
@@ -16,8 +18,7 @@ export default function Choose() {
             Our Goal:
           </h4>
           <p className="text-[#ffffffb8] text-base font-medium mb-[10px]">
-            &ldquo;Innovative Strategies for Maximum Impact and Lasting
-            Success.&rdquo;
+            &ldquo;Help businesses create value for their customers.&rdquo;
           </p>
         </div>
       </div>
@@ -30,27 +31,20 @@ export default function Choose() {
           We offer the best business solutions
         </h2>
         <p className="font-normal text-base mt-[10px] mb-[35px] max-w-fit text-[#7b7b7b] normal-case">
-          Our committed staff makes sure that digital strategies and customized
-          advice are met. We stand behind our quality and level of service.
+          Our unique approach allows our clients to rapidly scale their business
         </p>
         <div className="flex flex-col justify-start gap-[10px]">
           {[
-            { src: "/list1.webp", text: "Save Time And Money" },
-            { src: "/list2.webp", text: "Growing & Scale Up Businesses" },
-            { src: "/list3.webp", text: "Success Campaign on Social" },
+            { Icon: IndustryIcon, text: "Deep Industry Experience" },
+            { Icon: ConsultingIcon, text: "Consulting Expertise" },
+            { Icon: ValueCreationIcon, text: "Rapid Value Creation" },
           ].map((item, index) => (
             <div
               key={index}
               className="flex flex-row gap-4 justify-start items-center"
             >
-              <div className="flex w-[45px] h-[45px] p-0 justify-center items-center bg-[#ef8450] rounded-full">
-                <Image
-                  src={item.src}
-                  width={25}
-                  height={25}
-                  alt="List icon"
-                  className=""
-                />
+              <div className="flex w-[45px] h-[45px] p-2 justify-center items-center bg-[#ef8450] rounded-full text-white">
+                <item.Icon />
               </div>
               <h4 className="text-[#10393b] text-lg md:text-xl font-semibold">
                 {item.text}

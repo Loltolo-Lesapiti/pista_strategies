@@ -1,55 +1,40 @@
-import Image from "next/image";
-
+import { ProfessionalismIcon } from "./icons";
+import { ConfidenceIcon } from "./icons";
+import { EfficiencyIcon } from "./icons";
 export const Values = () => {
   return (
-    <div className="flex flex-col justify-start items-center md:flex-row justify-between items-center mt-16 px-4 md:px-0">
-      <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:mb-0 w-1/3">
-        <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-0">
-          <Image
-            src="/val1.webp"
-            width={35}
-            height={35}
-            alt="Picture of the author"
-            className=""
-          />
+    <div className="flex flex-col md:flex-row justify-between items-start mt-16 px-4 md:px-0">
+      <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:w-1/3">
+        <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-3 text-white">
+          <ProfessionalismIcon />
         </div>
-        <h4 className="text-base font-bold text-[#10393b]">Search Position</h4>
+        <h4 className="text-base font-bold text-[#10393b]">Professionalism</h4>
         <p className="text-base font-normal text-[#7b7b7b]">
-          We Improving website visibility on search engines.
+          We uphold the highest standards in our work and interactions.
         </p>
       </div>
 
-      <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:mb-0 w-1/3">
-        <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-0">
-          <Image
-            src="/val2.webp"
-            width={35}
-            height={35}
-            alt="Picture of the author"
-            className=""
-          />
+      <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:w-1/3">
+        <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-3 text-white">
+          <ConfidenceIcon />
         </div>
-        <h4 className="text-base font-bold text-[#10393b]">Target Market</h4>
+        <h4 className="text-base font-bold text-[#10393b]">Confidence</h4>
         <p className="text-base font-normal text-[#7b7b7b]">
-          Developed a targeted PPC campaign on Google Ads
+          We approach challenges with assurance and self-belief.
         </p>
       </div>
 
-      <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:mb-0 w-1/3">
-        <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-0">
-          <Image
-            src="/val3.webp"
-            width={35}
-            height={35}
-            alt="Picture of the author"
-            className=""
-          />
+      <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:w-1/3">
+        <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-3 text-white">
+          <EfficiencyIcon />
         </div>
-        <h4 className="text-base font-bold text-[#10393b]">Best Strategy</h4>
+        <h4 className="text-base font-bold text-[#10393b]">Efficiency</h4>
         <p className="text-base font-normal text-[#7b7b7b]">
-          Developed a detailed audience analysis and content themes.
+          We optimize our processes to deliver results swiftly.
         </p>
       </div>
     </div>
   );
 };
+
+export default Values;

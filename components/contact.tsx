@@ -16,8 +16,16 @@ export const Contact = () => {
           digital success because of our quality and service.
         </p>
         <div className="flex flex-row gap-2 sm:gap-4 justify-center items-center w-full">
-          <CustomButton backgroundColor="#ef8450" body=" Get Started" />
-          <CustomButton backgroundColor="#10393b" body="Contact Us" />
+          <CustomButton
+            backgroundColor="#ef8450"
+            body=" Get Started"
+            href="/contact"
+          />
+          <CustomButton
+            backgroundColor="#10393b"
+            body="Contact Us"
+            href="/contact"
+          />
         </div>
       </div>
     </>

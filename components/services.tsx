@@ -14,8 +14,8 @@ export const Services = () => {
           Our capabilities
         </h2>
         <p className="font-normal text-sm lg:text-base mt-[10px] mb-[35px] max-w-fit text-[#7b7b7b] normal-case md:pr-4">
-          Transforming your digital environment with creative solutions and
-          strategic approaches for unrivaled success.
+          Empowering small and medium size businesses to provide the best
+          possible quality for thier clients
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full lg:w-auto">
