@@ -64,7 +64,11 @@ export const ContactForm = () => {
             className="w-full px-3 py-4 border border-gray-300 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></textarea>
         </div>
-        <CustomButton backgroundColor="#ef8450" body="Send Message" />
+        <CustomButton
+          backgroundColor="#ef8450"
+          body="Send Message"
+          href="/contact"
+        />
       </form>
     </div>
   );
