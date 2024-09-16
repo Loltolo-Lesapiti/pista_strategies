@@ -26,6 +26,15 @@ export const Navbar = () => {
     return pathname?.startsWith(href) ?? false;
   };
 
+  const handleItemClick = (event: React.MouseEvent | React.KeyboardEvent) => {
+    if (
+      event.type === "click" ||
+      (event as React.KeyboardEvent).key === "Enter"
+    ) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <NextUINavbar
       className="fixed top-0 left-0 right-0 bg-[#10393b] text-white pt-4 pb-8 z-50 mb-0"
@@ -71,7 +80,11 @@ export const Navbar = () => {
         </ul>
 
         <NavbarItem className="hidden md:flex">
-          <CustomButton backgroundColor="#10393b" body="Free Consult" />
+          <CustomButton
+            backgroundColor="#10393b"
+            body="Free Consult"
+            href="/contact"
+          />
         </NavbarItem>
       </NavbarContent>
 
@@ -86,23 +99,37 @@ export const Navbar = () => {
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <NextLink href={item.href} passHref>
-                <span
-                  className={`text-lg cursor-pointer ${
-                    isActive(item.href)
-                      ? "text-[#ef8450]"
-                      : item.label === "Free Consult"
-                      ? "text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
-                      : "text-white hover:text-[#ef8450]"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </span>
+                {item.label === "Free Consult" ? (
+                  <button
+                    className="text-lg cursor-pointer text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
+                    onClick={handleItemClick}
+                    onKeyDown={handleItemClick}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <button
+                    className={`text-lg cursor-pointer ${
+                      isActive(item.href)
+                        ? "text-[#ef8450]"
+                        : "text-white hover:text-[#ef8450]"
+                    }`}
+                    onClick={handleItemClick}
+                    onKeyDown={handleItemClick}
+                    tabIndex={0}
+                  >
+                    {item.label}
+                  </button>
+                )}
               </NextLink>
             </NavbarMenuItem>
           ))}
           <NavbarMenuItem className="flex md:hidden ">
-            <CustomButton backgroundColor="#10393b" body="Free Consult" />
+            <CustomButton
+              backgroundColor="#10393b"
+              body="Free Consult"
+              href="/contact"
+            />
           </NavbarMenuItem>
         </div>
       </NavbarMenu>
