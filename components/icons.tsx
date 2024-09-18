@@ -4,6 +4,10 @@ interface StarIconProps {
   filled: boolean;
   className?: string;
 }
+interface ArrowIconProps {
+  filled?: boolean;
+  className?: string;
+}
 export const IndustryIcon = () => (
   <svg
     className="w-6 h-6"
@@ -142,10 +146,14 @@ export const StarIcon: React.FC<StarIconProps> = ({ filled, className }) => (
     />
   </svg>
 );
-export const ArrowIcon: React.FC<StarIconProps> = () => (
+export const ArrowIcon: React.FC<ArrowIconProps> = ({
+  filled = false,
+  className = "",
+}) => (
   <svg
-    className="h-4 w-4 ml-1"
-    fill="currentColor"
+    className={`h-4 w-4 ml-1 ${className}`}
+    fill={filled ? "currentColor" : "none"}
+    stroke="currentColor"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -154,10 +162,10 @@ export const ArrowIcon: React.FC<StarIconProps> = () => (
       d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H3a1 1 0 110-2h9.586l-2.293-2.293a1 1 0 010-1.414z"
       fillRule="evenodd"
       transform="rotate(-45, 10, 10)"
+      strokeWidth={filled ? "0" : "2"}
     />
   </svg>
 );
-
 export const Logo: React.FC<IconSvgProps> = ({
   size = 36,
   width,
