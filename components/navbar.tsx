@@ -11,7 +11,7 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import NextLink from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import { siteConfig } from "@/config/site";
 import { Logo } from "@/components/icons";
@@ -23,6 +23,7 @@ export const Navbar = () => {
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
+
     return pathname?.startsWith(href) ?? false;
   };
 
@@ -38,16 +39,16 @@ export const Navbar = () => {
   return (
     <NextUINavbar
       className="fixed top-0 left-0 right-0 bg-[#10393b] text-white pt-4 pb-8 z-50 mb-0"
-      maxWidth="xl"
       isMenuOpen={isMenuOpen}
+      maxWidth="xl"
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink
+            passHref
             className="flex justify-start items-center gap-1"
             href="/"
-            passHref
           >
             <Logo />
             <p className="font-bold text-inherit uppercase">Pista Strategies</p>
@@ -62,14 +63,14 @@ export const Navbar = () => {
         <ul className="hidden lg:flex gap-8">
           {siteConfig.navItems.map((item, index) => (
             <NavbarItem key={`${item}-${index}`}>
-              <NextLink href={item.href} passHref>
+              <NextLink passHref href={item.href}>
                 <span
                   className={`text-lg cursor-pointer ${
                     isActive(item.href)
                       ? "text-[#ef8450]"
                       : item.label === "Free Consult"
-                      ? "text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
-                      : "text-white hover:text-[#ef8450]"
+                        ? "text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
+                        : "text-white hover:text-[#ef8450]"
                   }`}
                 >
                   {item.label}
@@ -98,7 +99,7 @@ export const Navbar = () => {
         <div className="mx-4 mt-4 flex flex-col gap-10">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <NextLink href={item.href} passHref>
+              <NextLink passHref href={item.href}>
                 {item.label === "Free Consult" ? (
                   <button
                     className="text-lg cursor-pointer text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
@@ -114,9 +115,9 @@ export const Navbar = () => {
                         ? "text-[#ef8450]"
                         : "text-white hover:text-[#ef8450]"
                     }`}
+                    tabIndex={0}
                     onClick={handleItemClick}
                     onKeyDown={handleItemClick}
-                    tabIndex={0}
                   >
                     {item.label}
                   </button>

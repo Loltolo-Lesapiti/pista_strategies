@@ -1,7 +1,3 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  basePath: "/business_website",
-  reactStrictMode: true,
+module.exports = {
+  // ... your Next.js configuration options here
 };
-
-module.exports = nextConfig;

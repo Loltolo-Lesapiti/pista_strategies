@@ -22,7 +22,7 @@ const StatsComponent = () => {
     <div className="w-full bg-[#10393b] p-8 rounded-[15px] mt-[100px]">
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {stats.map((stat, index) => (
-          <StatItem key={index} value={stat.value} label={stat.label} />
+          <StatItem key={index} label={stat.label} value={stat.value} />
         ))}
       </div>
     </div>

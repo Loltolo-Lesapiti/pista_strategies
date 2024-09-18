@@ -5,64 +5,64 @@ export const ContactForm = () => {
       <form className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label htmlFor="name" className="block mb-1">
+            <label className="block mb-1" htmlFor="name">
               <h4 className="text-lg font-bold text-[#10393b]">Name</h4>
             </label>
             <input
-              type="text"
+              className="w-full px-3  border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
               id="name"
               placeholder="Ex. Purity Mwende"
-              className="w-full px-3  border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block mb-1">
+            <label className="block mb-1" htmlFor="email">
               <h4 className="text-lg font-bold text-[#10393b]">
                 Email Address
               </h4>
             </label>
             <input
-              type="email"
+              className="w-full px-3 border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
               id="email"
               placeholder="example@mail.com"
-              className="w-full px-3 border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="email"
             />
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label htmlFor="phone" className="block mb-1">
+            <label className="block mb-1" htmlFor="phone">
               <h4 className="text-lg font-bold text-[#10393b]">Phone Number</h4>
             </label>
             <input
-              type="tel"
+              className="w-full px-3 border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
               id="phone"
               placeholder="(123) 456 - 789"
-              className="w-full px-3 border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="tel"
             />
           </div>
           <div>
-            <label htmlFor="subject" className="block mb-1">
+            <label className="block mb-1" htmlFor="subject">
               <h4 className="text-lg font-bold text-[#10393b]">Subject</h4>
             </label>
             <input
-              type="text"
+              className="w-full px-3 border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
               id="subject"
               placeholder="What we can help with?"
-              className="w-full px-3 border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
             />
           </div>
         </div>
         <div>
-          <label htmlFor="message" className="block mb-1">
+          <label className="block mb-1" htmlFor="message">
             <h4 className="text-lg font-bold text-[#10393b]">Your Message</h4>
           </label>
           <textarea
-            id="message"
-            rows={6}
-            placeholder="Leave Extra Message..."
             className="w-full px-3 py-4 border border-gray-300 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
-          ></textarea>
+            id="message"
+            placeholder="Leave Extra Message..."
+            rows={6}
+          />
         </div>
         <CustomButton
           backgroundColor="#ef8450"

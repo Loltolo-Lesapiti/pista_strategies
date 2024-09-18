@@ -27,11 +27,11 @@ export const ContactDetails = () => {
         >
           <div className="flex justify-center items-center">
             <Image
-              src={item.icon}
-              width={50}
-              height={50}
               alt={item.title}
               className=""
+              height={50}
+              src={item.icon}
+              width={50}
             />
           </div>
           <h4 className="text-lg font-bold text-[#10393b]">{item.title}</h4>

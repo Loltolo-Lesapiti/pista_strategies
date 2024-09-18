@@ -7,11 +7,11 @@ export default function Choose() {
     <div className="flex flex-col gap-8 md:flex-row justify-between items-center md:px-0">
       <div className="flex flex-col justify-center items-center w-full md:w-1/2 gap-4 relative mb-16 md:mb-0 ">
         <Image
-          src="/choose.webp"
-          width={500}
-          height={500}
           alt="Picture of the author"
           className="relative rounded-lg shadow-y-7xl shadow-[#ffffff38] shadow-black w-full md:w-auto"
+          height={500}
+          src="/choose.webp"
+          width={500}
         />
         <div className="absolute flex flex-col bottom-[-113px] items-center justify-around gap-[10px] bg-[#10393b] w-[90%] px-6 md:w-[390px] rounded-[15px] py-[25px] z-10 text-center self-center">
           <h4 className="text-white text-base font-semibold mt-[10px]">

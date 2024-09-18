@@ -23,7 +23,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   const safeHref = typeof href === "string" && href ? href : "#";
 
   return (
-    <Link href={safeHref} passHref legacyBehavior>
+    <Link legacyBehavior passHref href={safeHref}>
       <Button
         as="a"
         className={clsx(
@@ -36,7 +36,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
             "text-black": isWhiteBackground,
             "text-white": !isWhiteBackground,
           },
-          className
+          className,
         )}
         style={{ backgroundColor }}
       >
@@ -51,7 +51,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
             {
               "bg-white": !isWhiteBackground,
               "bg-[#ef8450]": isWhiteBackground,
-            }
+            },
           )}
         />
       </Button>

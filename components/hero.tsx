@@ -28,6 +28,7 @@ export const Hero = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -65,11 +66,11 @@ export const Hero = () => {
         />
         <div className="relative z-20">
           <Image
-            src="/test.webp"
-            width={707}
-            height={525}
             alt="Hero Image"
             className="rounded-[15px] shadow-xl w-full h-auto"
+            height={525}
+            src="/test.webp"
+            width={707}
           />
         </div>
       </div>

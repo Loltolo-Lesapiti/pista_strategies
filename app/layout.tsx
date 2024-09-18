@@ -29,7 +29,7 @@ export default function RootLayout({
         className={clsx(
           "min-h-screen bg-background font-body antialiased",
           fontHeading.variable,
-          fontBody.variable
+          fontBody.variable,
         )}
       >
         <div className="relative flex flex-col h-screen">

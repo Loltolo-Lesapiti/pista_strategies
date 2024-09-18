@@ -36,11 +36,11 @@ export const Clients = () => {
         {[...logos, ...logos].map((logo, index) => (
           <div key={`${logo.id}-${index}`} className="flex-shrink-0 w-1/6 px-4">
             <Image
-              src={logo.src}
               alt={logo.alt}
-              width={150}
               height={50}
               objectFit="contain"
+              src={logo.src}
+              width={150}
             />
           </div>
         ))}

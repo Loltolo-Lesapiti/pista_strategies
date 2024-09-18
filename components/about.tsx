@@ -21,6 +21,7 @@ export const About = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -58,11 +59,11 @@ export const About = () => {
           />
         </div>
         <Image
-          src="/test2.webp"
-          width={500}
-          height={500}
           alt="Picture of the author"
           className="relative rounded-[15px] shadow-y-7xl shadow-[#ffffff38] shadow-black w-full md:w-auto z-20"
+          height={500}
+          src="/test2.webp"
+          width={500}
         />
       </div>
     </div>

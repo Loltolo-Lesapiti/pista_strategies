@@ -16,11 +16,11 @@ export const Testimonial = () => {
       <div className="flex flex-col lg:flex-row justify-center items-center gap-2 sm:gap-8 w-full">
         <div className="w-full lg:w-1/2 flex justify-center p-0 m-0">
           <Image
-            src="/testimonial.webp"
             alt="Testimonial illustration"
-            width={500}
-            height={500}
             className="rounded-lg sm:rounded-xl md:rounded-2xl w-full max-w-[400px] lg:max-w-[500px] h-auto"
+            height={500}
+            src="/testimonial.webp"
+            width={500}
           />
         </div>
         <div className="w-full lg:w-3/5 ml-0 pl-0">

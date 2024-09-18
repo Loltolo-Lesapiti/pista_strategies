@@ -25,13 +25,13 @@ const FooterComponent = () => {
               (item) => (
                 <li key={item}>
                   <Link
-                    href={`/${item.toLowerCase().replace(" ", "-")}`}
                     className="text-base text-[#7b7b7b] hover:text-gray-900"
+                    href={`/${item.toLowerCase().replace(" ", "-")}`}
                   >
                     {item}
                   </Link>
                 </li>
-              )
+              ),
             )}
           </ul>
         </div>
@@ -44,8 +44,8 @@ const FooterComponent = () => {
             {["Style Guide", "Licences", "Changelog"].map((item) => (
               <li key={item}>
                 <Link
-                  href={`/${item.toLowerCase().replace(" ", "-")}`}
                   className="text-sm text-[#7b7b7b] hover:text-gray-900"
+                  href={`/${item.toLowerCase().replace(" ", "-")}`}
                 >
                   {item}
                 </Link>
@@ -64,13 +64,13 @@ const FooterComponent = () => {
           </p>
           <form className="flex flex-col">
             <input
-              type="email"
-              placeholder="Your mail here"
               className="px-4 py-2 mb-2 text-base text-gray-700 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+              placeholder="Your mail here"
+              type="email"
             />
             <button
-              type="submit"
               className="px-4 py-2 text-base text-white bg-orange-400 rounded-md hover:bg-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-400"
+              type="submit"
             >
               Submit
             </button>

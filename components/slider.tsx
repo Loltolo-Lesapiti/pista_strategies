@@ -59,12 +59,14 @@ const TestimonialSlider: React.FC = () => {
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+      (prevIndex) =>
+        (prevIndex - 1 + testimonials.length) % testimonials.length,
     );
   };
 
   useEffect(() => {
     const timer = setInterval(nextSlide, 5000); // Auto-advance every 5 seconds
+
     return () => clearInterval(timer);
   }, []);
 
@@ -80,12 +82,12 @@ const TestimonialSlider: React.FC = () => {
           {[...Array(5)].map((_, i) => (
             <StarIcon
               key={i}
-              filled={i < currentTestimonial.rating}
               className={`w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 ${
                 i < currentTestimonial.rating
                   ? "text-yellow-400"
                   : "text-gray-300"
               }`}
+              filled={i < currentTestimonial.rating}
             />
           ))}
         </div>
@@ -101,14 +103,14 @@ const TestimonialSlider: React.FC = () => {
       </CardBody>
       <CardFooter className="justify-end pt-0">
         <button
-          onClick={prevSlide}
           className="mx-1 sm:mx-2 p-1 sm:p-2 rounded-full border-2 border-[#ef8450]"
+          onClick={prevSlide}
         >
           <ChevronIcon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
         </button>
         <button
-          onClick={nextSlide}
           className="mx-1 sm:mx-2 p-1 sm:p-2 rounded-full border-2 border-[#ef8450]"
+          onClick={nextSlide}
         >
           <ChevronRightIcon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
         </button>

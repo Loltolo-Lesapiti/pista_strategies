@@ -26,11 +26,11 @@ export const Services = () => {
           >
             <div className="flex justify-center items-center">
               <Image
-                src="/service1.png"
-                width={80}
-                height={80}
                 alt="Service icon"
                 className=""
+                height={80}
+                src="/service1.png"
+                width={80}
               />
             </div>
             <h4 className="text-xl lg:text-2xl font-bold text-[#10393b] mt-[14px] mb-[8px]">
@@ -40,7 +40,7 @@ export const Services = () => {
               We Improving website visibility on search engines.
             </p>
             <div className="text-[#ef8450] hover:text-black text-sm lg:text-base font-normal flex flex-row justify-start items-center gap-[5px]">
-              <Link href="/" className="flex items-center">
+              <Link className="flex items-center" href="/">
                 Read more
                 <ArrowIcon />
               </Link>

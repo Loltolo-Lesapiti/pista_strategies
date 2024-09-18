@@ -6,154 +6,153 @@ interface StarIconProps {
 }
 export const IndustryIcon = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    className="w-6 h-6"
     fill="none"
     stroke="currentColor"
-    strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="w-6 h-6"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7-7H4a2 2 0 0 0-2 2v4"></path>
-    <path d="M2 4v16"></path>
-    <path d="M15 4v4h4"></path>
-    <path d="M9.5 12.5 7 15l2.5 2.5"></path>
-    <path d="M14.5 12.5 17 15l-2.5 2.5"></path>
+    <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7-7H4a2 2 0 0 0-2 2v4" />
+    <path d="M2 4v16" />
+    <path d="M15 4v4h4" />
+    <path d="M9.5 12.5 7 15l2.5 2.5" />
+    <path d="M14.5 12.5 17 15l-2.5 2.5" />
   </svg>
 );
 
 export const ConsultingIcon = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    className="w-6 h-6"
     fill="none"
     stroke="currentColor"
-    strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="w-6 h-6"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
-    <path d="M9 18h6"></path>
-    <path d="M10 22h4"></path>
+    <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+    <path d="M9 18h6" />
+    <path d="M10 22h4" />
   </svg>
 );
 
 export const ValueCreationIcon = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    className="w-6 h-6"
     fill="none"
     stroke="currentColor"
-    strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="w-6 h-6"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M12 2v20"></path>
-    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+    <path d="M12 2v20" />
+    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
   </svg>
 );
 export const ProfessionalismIcon = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    className="w-6 h-6"
     fill="none"
     stroke="currentColor"
-    strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="w-6 h-6"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M20 7h-3a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
-    <path d="M16 8V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3"></path>
-    <path d="M4 7H1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3"></path>
-    <path d="M7 22V11"></path>
-    <path d="M7 7V2"></path>
+    <path d="M20 7h-3a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+    <path d="M16 8V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3" />
+    <path d="M4 7H1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3" />
+    <path d="M7 22V11" />
+    <path d="M7 7V2" />
   </svg>
 );
 
 export const ConfidenceIcon = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    className="w-6 h-6"
     fill="none"
     stroke="currentColor"
-    strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="w-6 h-6"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
   </svg>
 );
 
 export const EfficiencyIcon = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    className="w-6 h-6"
     fill="none"
     stroke="currentColor"
-    strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="w-6 h-6"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <circle cx="12" cy="12" r="10"></circle>
-    <polyline points="12 6 12 12 16 14"></polyline>
+    <circle cx="12" cy="12" r="10" />
+    <polyline points="12 6 12 12 16 14" />
   </svg>
 );
 
 export const ChevronIcon: React.FC<{ isOpen: boolean; className?: string }> = ({
   isOpen,
-  className,
 }) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
     className={`transition-transform duration-200 ${
       isOpen ? "transform rotate-180" : ""
     }`}
+    fill="none"
+    height="24"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+    width="24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <polyline points="6 9 12 15 18 9"></polyline>
+    <polyline points="6 9 12 15 18 9" />
   </svg>
 );
 
 export const StarIcon: React.FC<StarIconProps> = ({ filled, className }) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    className={`w-6 h-6 ${className}`}
     fill={filled ? "currentColor" : "none"}
     stroke="currentColor"
-    className={`w-6 h-6 ${className}`}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
     <path
+      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
     />
   </svg>
 );
-export const ArrowIcon: React.FC<StarIconProps> = ({ filled, className }) => (
+export const ArrowIcon: React.FC<StarIconProps> = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
     className="h-4 w-4 ml-1"
-    viewBox="0 0 20 20"
     fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fillRule="evenodd"
-      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H3a1 1 0 110-2h9.586l-2.293-2.293a1 1 0 010-1.414z"
       clipRule="evenodd"
+      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H3a1 1 0 110-2h9.586l-2.293-2.293a1 1 0 010-1.414z"
+      fillRule="evenodd"
       transform="rotate(-45, 10, 10)"
     />
   </svg>

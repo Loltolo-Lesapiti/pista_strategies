@@ -6,11 +6,11 @@ export const Values = () => {
       <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:mb-0 w-1/3">
         <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-0">
           <Image
-            src="/vision.webp"
-            width={35}
-            height={35}
             alt="Picture of the author"
             className=""
+            height={35}
+            src="/vision.webp"
+            width={35}
           />
         </div>
         <h4 className="text-base font-bold text-[#10393b]">Our Vision</h4>
@@ -24,11 +24,11 @@ export const Values = () => {
       <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:mb-0 w-1/3">
         <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-0">
           <Image
-            src="/mission.webp"
-            width={35}
-            height={35}
             alt="Picture of the author"
             className=""
+            height={35}
+            src="/mission.webp"
+            width={35}
           />
         </div>
         <h4 className="text-base font-bold text-[#10393b]">Our Mission</h4>
@@ -41,11 +41,11 @@ export const Values = () => {
       <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:mb-0 w-1/3">
         <div className="flex justify-center items-center h-[50px] w-[50px] bg-[#10393b] rounded-full p-0">
           <Image
-            src="/principle.webp"
-            width={35}
-            height={35}
             alt="Picture of the author"
             className=""
+            height={35}
+            src="/principle.webp"
+            width={35}
           />
         </div>
         <h4 className="text-base font-bold text-[#10393b]">Our Principle</h4>

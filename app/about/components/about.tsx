@@ -18,11 +18,11 @@ export const About = () => {
       </div>
       <div className="flex justify-center items-center w-full md:w-full mb-8 md:mb-0 relative">
         <Image
-          src="/about.webp"
-          width={1000}
-          height={500}
           alt="Picture of the author"
           className="relative rounded-[15px] shadow-y-7xl shadow-[#ffffff38] shadow-black w-full md:w-auto z-20"
+          height={500}
+          src="/about.webp"
+          width={1000}
         />
       </div>
     </div>

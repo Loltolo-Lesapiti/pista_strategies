@@ -32,11 +32,11 @@ export const TeamCard = () => {
           className="flex flex-col justify-center items-start gap-2 w-[calc(50%-1rem)] sm:w-[calc(50%-1rem)] md:w-[calc(25%-1.5rem)]"
         >
           <Image
-            src={member.image}
             alt={`Picture of ${member.name}`}
-            width={345}
-            height={345}
             className="rounded-[15px] w-full h-auto"
+            height={345}
+            src={member.image}
+            width={345}
           />
           <div>
             <h4 className="text-[#10393b] text-lg sm:text-xl font-semibold capitalize mt-2">
