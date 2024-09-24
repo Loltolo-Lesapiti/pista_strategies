@@ -12,9 +12,10 @@ const FooterComponent = () => {
             <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3>
           </div>
           <p className="text-base text-[#7b7b7b]">
-            Your digital vision, our creative mission, partner with us to build
-            brands that thrive online with cutting-edge technology and
-            insightful marketing.
+            We partner with you throughout your journey. We will help you
+            brainstorm your idea, design and deliver your unique value to your
+            customers. Our unique approach allows our clients to rapidly scale
+            their business with full confidence.
           </p>
         </div>
 
@@ -31,7 +32,7 @@ const FooterComponent = () => {
                     {item}
                   </Link>
                 </li>
-              ),
+              )
             )}
           </ul>
         </div>

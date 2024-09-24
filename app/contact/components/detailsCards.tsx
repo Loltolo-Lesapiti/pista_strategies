@@ -3,18 +3,18 @@ export const ContactDetails = () => {
   const details = [
     {
       icon: "/contact1.webp",
-      title: "Our location",
-      lines: ["Flawing Street, The Grand Avenue,", "Liverpool, UK 33342"],
+      title: "Utawala, By-Pass",
+      lines: ["Mwangaza Court, Off Shooters Road,", "House, N-45"],
     },
     {
       icon: "/contact2.webp",
       title: "Send an email",
-      lines: ["contact@appsupport.com", "gradia@support.com"],
+      lines: ["pistastrategies@gmail.com", "puritymwendeh@gmail.com"],
     },
     {
       icon: "/contact3.webp",
       title: "Call us",
-      lines: ["(+42) 235 - 2345 - 789", "(+42) 678 - 2345 - 789"],
+      lines: ["(+254) 758-215-549", "(+254) 782 - 311 - 019"],
     },
   ];
 

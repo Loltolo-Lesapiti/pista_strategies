@@ -6,7 +6,7 @@ export const Hero = () => {
           About Pista Strategies
         </h3>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white capitalize text-center">
-          Partner for Digital Revolution
+          Your Parner from an Idea to Market Leader
         </h1>
       </div>
     </div>

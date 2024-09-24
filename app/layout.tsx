@@ -29,15 +29,13 @@ export default function RootLayout({
         className={clsx(
           "min-h-screen bg-background font-body antialiased",
           fontHeading.variable,
-          fontBody.variable,
+          fontBody.variable
         )}
       >
-        <div className="relative flex flex-col h-screen">
+        <div className="w-full max-w-full relative flex flex-col h-screen">
           <Navbar />
-          <main className="container max-w-full flex-grow bg-[#fffaf1]">
-            {children}
-          </main>
-          <footer className="relative flex flex-col items-center justify-stretch w-full pt-[70px] px-10 bg-[#fffaf1]">
+          <main className="flex-grow bg-[#fffaf1]">{children}</main>
+          <footer className="relative flex flex-col items-center justify-stretch  pt-[70px] px-10 bg-[#fffaf1]">
             <FooterComponent />
           </footer>
         </div>

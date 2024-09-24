@@ -1,12 +1,15 @@
 import { About } from "../about";
-import { Values } from "../values";
+import { Statements } from "../values";
 import StatsComponent from "../starts";
+
+import Values from "@/components/values";
 export const AboutSection = () => {
   return (
-    <section className="w-full px-4 py-[130px] md:px-10">
+    <section className="px-4 py-[70px] md:px-10">
       <About />
-      <Values />
+      <Statements />
       <StatsComponent />
+      <Values />
     </section>
   );
 };

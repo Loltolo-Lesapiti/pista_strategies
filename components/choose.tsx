@@ -18,20 +18,23 @@ export default function Choose() {
             Our Goal:
           </h4>
           <p className="text-[#ffffffb8] text-base font-medium mb-[10px]">
-            &ldquo;Help businesses create value for their customers.&rdquo;
+            &ldquo;Help you brainstorm, design and deliver value.&rdquo;
           </p>
         </div>
       </div>
 
       <div className="flex flex-col items-start mt-[55px] justify-center w-full md:w-1/2 shrink-0">
         <div className="text-[#ef8450] font-medium py-2 bg-[#ffffff38] text-base uppercase">
-          why choose us
+          Why Work with us
         </div>
         <h2 className="text-4xl md:text-6xl font-semibold mt-[20px] mb-[10px] text-[#10393b]">
-          We offer the best business solutions
+          We provide the best business solutions
         </h2>
         <p className="font-normal text-base mt-[10px] mb-[35px] max-w-fit text-[#7b7b7b] normal-case">
-          Our unique approach allows our clients to rapidly scale their business
+          We partner with you throughout your journey. We will help you
+          brainstorm your idea, design and deliver your unique value to your
+          customers. Our unique approach allows our clients to rapidly scale
+          their business with full confidence. We achieve this through;
         </p>
         <div className="flex flex-col justify-start gap-[10px]">
           {[

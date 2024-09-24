@@ -1,7 +1,7 @@
 import CustomButton from "@/components/buttonUi";
 export const ContactForm = () => {
   return (
-    <div className="max-w-full max-w-[75%] mx-auto p-6">
+    <div className=" max-w-[75%] mx-auto p-6">
       <form className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
           <div>
