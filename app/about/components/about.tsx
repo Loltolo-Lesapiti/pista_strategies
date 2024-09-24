@@ -3,9 +3,6 @@ import Image from "next/image";
 export const About = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-4 md:gap-8">
-      <div className="text-[#ef8450] font-medium bg-[#ffffff38] text-base uppercase">
-        About Us
-      </div>
       <div className="flex flex-col gap-4 items-center justify-center md:flex-row md:items-start md:gap-16">
         <div className="flex flex-col items-start justify-around shrink-0 md:flex-1">
           <h2 className="text-4xl md:text-6xl font-bold mt-[20px] mb-[10px] text-[#10393b] text-justify">
