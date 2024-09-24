@@ -24,11 +24,8 @@ export default function Choose() {
       </div>
 
       <div className="flex flex-col items-start mt-[55px] justify-center w-full md:w-1/2 shrink-0">
-        <div className="text-[#ef8450] font-medium py-2 bg-[#ffffff38] text-base uppercase">
-          Why Work with us
-        </div>
         <h2 className="text-4xl md:text-6xl font-semibold mt-[20px] mb-[10px] text-[#10393b]">
-          We provide the best business solutions
+          Why Work with us
         </h2>
         <p className="font-normal text-base mt-[10px] mb-[35px] max-w-fit text-[#7b7b7b] normal-case">
           We partner with you throughout your journey. We will help you

@@ -39,7 +39,7 @@ export const Hero = () => {
           Welcome to Pista Strategies
         </h3>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-          Your Parner from an Idea to Market Leader
+          Your Partner from an Idea to Market Leader
         </h1>
         <p className="font-normal text-base mb-8 max-w-fit text-[#ffffffb8] normal-case">
           We Brainstorm, Analyze and Develop

@@ -4,7 +4,7 @@ import { Services } from "@/components/services";
 import { ChooseSection } from "@/components/sections/choose";
 import { HowSection } from "@/components/sections/how";
 // import { TeamSection } from "@/components/sections/team";
-import { TestimonySection } from "@/components/sections/testimony";
+// import { TestimonySection } from "@/components/sections/testimony";
 import { ContactSection } from "@/components/sections/contact";
 export default function Home() {
   return (
@@ -27,9 +27,9 @@ export default function Home() {
       {/* <section id="team">
         <TeamSection />
       </section> */}
-      <section id="testimony">
+      {/* <section id="testimony">
         <TestimonySection />
-      </section>
+      </section> */}
       <section id="contact">
         <ContactSection />
       </section>

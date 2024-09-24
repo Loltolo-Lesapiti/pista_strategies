@@ -33,12 +33,9 @@ export const Services = () => {
   return (
     <div className="py-12 bg-[#ffffff38]">
       <div className="flex flex-col items-center justify-center gap-4 md:gap-8">
-        <h2 className="text-[#ef8450] font-medium py-2 px-4 lg:px-8 text-sm lg:text-base uppercase">
-          Services
-        </h2>
         <div className="flex flex-col gap-0">
           <p className="text-center mb-8 text-4xl lg:text-6xl font-bold text-[#10393b] ">
-            Our capabilities
+            Our Services
           </p>
           <p className="text-center mb-12 font-normal text-sm lg:text-base text-[#7b7b7b] normal-case">
             We empower small and medium size businesses to provide the best
@@ -46,10 +43,13 @@ export const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex w-[45px] h-[45px] p-2 justify-center items-center bg-[#ef8450] rounded-full text-white">
+            <div
+              key={index}
+              className="bg-white flex flex-col p-6 rounded-lg shadow-md  justify-center items-center md:gap-8"
+            >
+              <div className="abolute top-0  flex w-[60px] h-[60px] p-2 justify-center items-center bg-[#10393b] rounded-full text-white">
                 <service.icon className="w-36 h-36 mb-4  text-3xl md:text-4xl lg:text-5xl font-semibold text-[#10393b] " />
               </div>
 

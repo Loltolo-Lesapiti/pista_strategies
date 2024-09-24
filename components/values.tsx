@@ -25,8 +25,8 @@ export const Values = () => {
         />
         <ValueItem
           Icon={ConfidenceIcon}
-          title="Confidence"
-          description="We approach challenges with assurance and self-belief."
+          title="Confidentiality"
+          description="Our clients privacy is our top most priority"
         />
         <ValueItem
           Icon={SimplifyIcon}
