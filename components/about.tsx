@@ -28,9 +28,6 @@ export const About = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row-reverse items-start justify-center gap-4 md:gap-16">
       <div className="flex flex-col items-start justify-around md:w-1/2 shrink-0 md:px-0 md:pt-8">
-        {/* <div className="text-[#ef8450] font-medium bg-[#ffffff38] text-base uppercase">
-          About
-        </div> */}
         <h2 className="text-4xl md:text-6xl font-bold mt-[20px] mb-[10px] text-[#10393b]">
           Who We Are
         </h2>

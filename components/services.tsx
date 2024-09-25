@@ -1,70 +1,66 @@
-// import Link from "next/link";
-
-import {
-  // ArrowIcon,
-  IndustryIcon,
-  ConsultingIcon,
-  ValueCreationIcon,
-} from "./icons";
-
 export const Services = () => {
   const services = [
     {
-      title: "Business Plan, Business Proposal and Investor Pitch Deck",
+      title: "Business Writing",
+      duties: [
+        "Business Plan for SMEs",
+        "Business Proposals",
+        "Investor Pitch Deck",
+      ],
       description:
-        "We craft personalized, comprehensive business plans, including market analysis, financial projections, and operational strategies.",
-      icon: IndustryIcon,
+        "We craft personalized business plans with a clear roadmap on how to grow your business, including market analysis, financial projections & operational plan.",
     },
     {
-      title: "Grant Writing, Grant Research and Grant Application",
+      title: "Grant Writing",
+      duties: ["Grant Writing ", "Grant Web Research ", "Grant Application "],
       description:
-        "We specialize in grant writing compelling proposals for funding, partnerships, and contracts.",
-      icon: ConsultingIcon,
+        "We craft visually compelling pitch decks that communicate your vision and value proposition to investors and other stakeholders.",
     },
     {
-      title:
-        "Comprehensive Market Research, Competitor Research, SWOT Analysis",
+      title: "MARKET RESEARCH",
+      duties: [
+        "Comprehensive Market Research",
+        "Competitor Research ",
+        "SWOT Analysis ",
+      ],
       description:
-        "Our team helps non-profits and businesses secure funding through expertly written grant proposals.",
-      icon: ValueCreationIcon,
+        "We do comprehensive web research tailored to your industry, including competitor analysis, industry analysis, customer insights, and a SWOT analysis helping you understand your industry better. ",
     },
   ];
 
   return (
-    <div className="py-12 bg-[#ffffff38]">
+    <div className=" py-12 px-4 bg-white md:px-10">
       <div className="flex flex-col items-center justify-center gap-4 md:gap-8">
-        <div className="flex flex-col gap-0">
-          <p className="text-center mb-8 text-4xl lg:text-6xl font-bold text-[#10393b] ">
+        <div className=" h-[100px] w-[95%] ml-[5%] bg-[#10393b] mr-0 flex justify-center items-center rounded-l-[15px]">
+          <p className="text-center text-4xl lg:text-6xl font-bold text-[#fffaf1] ">
             Our Services
           </p>
-          <p className="text-center mb-12 font-normal text-sm lg:text-base text-[#7b7b7b] normal-case">
-            We empower small and medium size businesses to provide the best
-            possible quality for their clients through our services.
-          </p>
         </div>
-
-        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col gap-4 justify-center items center md:flex-row md:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white flex flex-col p-6 rounded-lg shadow-md  justify-center items-center md:gap-8"
+              className="flex flex-col gap-4 justify-start items-start border-4 border-[#10393b]  px-4 py-4 rounded-[15px] md:gap-8 md:w-2/5"
             >
-              <div className="abolute top-0  flex w-[60px] h-[60px] p-2 justify-center items-center bg-[#10393b] rounded-full text-white">
-                <service.icon className="w-36 h-36 mb-4  text-3xl md:text-4xl lg:text-5xl font-semibold text-[#10393b] " />
-              </div>
-
-              <h4 className="mb-2 text-xl lg:text-2xl font-bold text-[#10393b]">
+              <h4 className="text-xl md:text-2xl font-bold text-[#10393b] mt-8 md:mt-0 uppercase">
                 {service.title}
               </h4>
-              <p className="mb-4 text-sm lg:text-base font-normal text-[#7b7b7b]">
+              <div className="flex flex-col gap-[10px] justify-start items-start">
+                {service.duties.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-row gap-4 justify-center items-center"
+                  >
+                    <div className="flex w-[14px] h-[14px] p-2 bg-[#ef8450] rounded-full" />
+                    <h4 className="text-[#10393b] text-sm md:text-base font-normal">
+                      {item}
+                    </h4>
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm md:text-base font-normal text-[#7b7b7b] mt-4">
                 {service.description}
               </p>
-              {/* <Link
-                href="#"
-                className="inline-flex items-center text-[#ef8450] hover:text-black text-sm lg:text-base font-normal"
-              >
-                Read more <ArrowIcon className="ml-2" />
-              </Link> */}
             </div>
           ))}
         </div>
