@@ -12,9 +12,10 @@ import {
 } from "@nextui-org/navbar";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
-import { Logo } from "@/components/icons";
+// import { Logo } from "@/components/icons";
 import CustomButton from "@/components/buttonUi";
 
 export const Navbar = () => {
@@ -50,8 +51,11 @@ export const Navbar = () => {
             className="flex justify-start items-center gap-1"
             href="/"
           >
-            <Logo />
-            <p className="font-bold text-inherit uppercase">Pista Strategies</p>
+            <Image src="/logo.webp" alt="Logo Image" width={100} height={100} />
+            {/* <Logo /> */}
+            <p className="font-bold text-inherit capitalize">
+              Pista Strategies
+            </p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
@@ -69,8 +73,8 @@ export const Navbar = () => {
                     isActive(item.href)
                       ? "text-[#ef8450]"
                       : item.label === "Free Consult"
-                        ? "text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
-                        : "text-white hover:text-[#ef8450]"
+                      ? "text-[#10393b] bg-[#ef8450] px-4 py-2 rounded-lg border-2 border-[#ef8450] inline-block"
+                      : "text-white hover:text-[#ef8450]"
                   }`}
                 >
                   {item.label}
