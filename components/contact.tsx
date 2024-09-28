@@ -4,9 +4,6 @@ export const Contact = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center bg-[#10393b] rounded-[15px] py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-10">
-        <div className="text-[#ef8450] font-medium text-sm sm:text-base uppercase mb-4">
-          LETS TALK
-        </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mt-2 sm:mt-4 mb-2 sm:mb-4 text-white text-center w-full sm:w-4/5 lg:w-3/5">
           We love challenges big and small - whats yours?
         </h2>

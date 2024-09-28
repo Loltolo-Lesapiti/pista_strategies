@@ -39,7 +39,7 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      className="fixed top-0 left-0 right-0 bg-[#10393b] text-white pt-4 pb-8 z-50 mb-0"
+      className="fixed top-0 left-0 right-0 bg-[#10393b] text-white py-4 z-50 mb-0"
       isMenuOpen={isMenuOpen}
       maxWidth="xl"
       onMenuOpenChange={setIsMenuOpen}
@@ -51,11 +51,11 @@ export const Navbar = () => {
             className="flex justify-start items-center gap-1"
             href="/"
           >
-            <Image src="/logo.webp" alt="Logo Image" width={100} height={100} />
+            <Image src="/logo1.png" alt="Logo Image" width={300} height={300} />
             {/* <Logo /> */}
-            <p className="font-bold text-inherit capitalize">
+            {/* <p className="font-bold text-inherit capitalize">
               Pista Strategies
-            </p>
+            </p> */}
           </NextLink>
         </NavbarBrand>
       </NavbarContent>

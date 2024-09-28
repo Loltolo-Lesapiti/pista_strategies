@@ -6,8 +6,9 @@ import Link from "next/link";
 interface CustomButtonProps {
   body: string;
   backgroundColor: string;
-  href: string;
+  href?: string;
   className?: string;
+  type?: string;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
@@ -36,7 +37,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
             "text-black": isWhiteBackground,
             "text-white": !isWhiteBackground,
           },
-          className,
+          className
         )}
         style={{ backgroundColor }}
       >
@@ -51,7 +52,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
             {
               "bg-white": !isWhiteBackground,
               "bg-[#ef8450]": isWhiteBackground,
-            },
+            }
           )}
         />
       </Button>

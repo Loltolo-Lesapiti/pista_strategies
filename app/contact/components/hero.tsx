@@ -1,14 +1,26 @@
+import Image from "next/image";
+
 export const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row md:items-center justify-center md:gap-16 relative pt-[110px]">
-      <div className="flex flex-col items-center justify-items-start shrink-0 px-4 md:px-0 md:pt-8 md:w-1/2">
-        <h3 className="text-white font-medium py-2 px-8 bg-[#ffffff38] text-base rounded-lg max-w-fit uppercase mb-6">
-          Contact
-        </h3>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white capitalize text-center">
-          Get in Touch With Us
+    <div className="relative h-[200px] flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          alt="Hero Image"
+          src="/test.webp"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+        <div className="absolute inset-0 bg-[#10393b] bg-opacity-10 backdrop-filter backdrop-blur-sm"></div>
+      </div>
+
+      <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+          GET IN TOUCH WITH US
         </h1>
       </div>
     </div>
   );
 };
+
+export default Hero;

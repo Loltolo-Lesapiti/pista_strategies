@@ -11,6 +11,7 @@
 	"dependencies": {
 		"@nextui-org/button": "2.0.37",
 		"@nextui-org/card": "^2.0.33",
+		"@nextui-org/chip": "^2.0.33",
 		"@nextui-org/code": "2.0.32",
 		"@nextui-org/input": "2.2.4",
 		"@nextui-org/kbd": "2.0.33",
@@ -28,11 +29,13 @@
 		"intl-messageformat": "^10.5.0",
 		"next": "14.2.4",
 		"next-themes": "^0.2.1",
+		"nodemailer": "^6.9.15",
 		"react": "18.3.1",
 		"react-dom": "18.3.1"
 	},
 	"devDependencies": {
 		"@types/node": "20.5.7",
+		"@types/nodemailer": "^6.4.16",
 		"@types/react": "18.3.3",
 		"@types/react-dom": "18.3.0",
 		"@typescript-eslint/eslint-plugin": "7.2.0",

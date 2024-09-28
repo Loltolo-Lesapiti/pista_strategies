@@ -2,8 +2,8 @@ import { Hero } from "../hero";
 // import { Clients } from "../clients";
 export const HeroSection = () => {
   return (
-    <div className="w-full bg-[#10393b]">
-      <div className="mx-auto py-[130px] px-4 md:px-4 md:py-[130px]">
+    <div className="w-full">
+      <div className="mx-auto pt-[55px] md:pt-[95px]">
         <Hero />
       </div>
       {/* <Clients /> */}

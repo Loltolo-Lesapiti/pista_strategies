@@ -4,7 +4,7 @@ export const Statements = () => {
   return (
     <div className="flex flex-col md:items-center md:justify-center">
       <h2 className="text-4xl md:text-6xl font-bold md:mt-16 text-[#10393b] md:text-center md:w-3/5">
-        Company Statement
+        Mission and Vision
       </h2>
       <div className="flex flex-col justify-start items-center md:flex-row justify-between items-center mt-16 px-4 md:px-0">
         <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:mb-0 w-1/3">

@@ -13,14 +13,6 @@ export default function Choose() {
           src="/choose.webp"
           width={500}
         />
-        <div className="absolute flex flex-col bottom-[-113px] items-center justify-around gap-[10px] bg-[#10393b] w-[90%] px-6 md:w-[390px] rounded-[15px] py-[25px] z-10 text-center self-center">
-          <h4 className="text-white text-base font-semibold mt-[10px]">
-            Our Goal:
-          </h4>
-          <p className="text-[#ffffffb8] text-base font-medium mb-[10px]">
-            &ldquo;Help you brainstorm, design and deliver value.&rdquo;
-          </p>
-        </div>
       </div>
 
       <div className="flex flex-col items-start mt-[55px] justify-center w-full md:w-1/2 shrink-0">
