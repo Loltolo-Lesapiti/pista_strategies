@@ -21,7 +21,7 @@ export const Hero = () => {
           Your Partner from an Idea to Market Leader
         </h1>
         <p className="font-semibold text-xl mb-8 text-white drop-shadow-md">
-          We Brainstorm, Analyze and Develop
+          We Brainstorm, Design and Develop
         </p>
         <CustomButton
           backgroundColor="#ef8450"

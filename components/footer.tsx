@@ -22,27 +22,30 @@ const FooterComponent = () => {
         <div className="col-span-1 md:col-span-1">
           <h5 className="text-[#10393b] text-lg font-semibold mb-4">Pages</h5>
           <ul className="space-y-2">
-            {["Home", "About us", "Portfolio", "Contact", "Blog"].map(
-              (item) => (
-                <li key={item}>
-                  <Link
-                    className="text-base text-[#7b7b7b] hover:text-gray-900"
-                    href={`/${item.toLowerCase().replace(" ", "-")}`}
-                  >
-                    {item}
-                  </Link>
-                </li>
-              )
-            )}
+            {["Home", "About us", "Services", "Contact", "Blog"].map((item) => (
+              <li key={item}>
+                <Link
+                  className="text-base text-[#7b7b7b] hover:text-gray-900"
+                  href={`/${item.toLowerCase().replace(" ", "-")}`}
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div className="col-span-1 md:col-span-1">
           <h5 className="text-[#10393b] text-lg font-semibold mb-4">
-            Utility pages
+            Services
           </h5>
           <ul className="space-y-2">
-            {["Style Guide", "Licences", "Changelog"].map((item) => (
+            {[
+              "SMes",
+              "Business proposal",
+              "Grant Application",
+              "Business Valuation",
+            ].map((item) => (
               <li key={item}>
                 <Link
                   className="text-sm text-[#7b7b7b] hover:text-gray-900"

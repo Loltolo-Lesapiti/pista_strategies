@@ -19,6 +19,10 @@ export const ContactForm: React.FC = () => {
     subject: "",
     message: "",
   });
+  const [status, setStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -32,6 +36,7 @@ export const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setStatus({ type: null, message: "" });
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -42,7 +47,7 @@ export const ContactForm: React.FC = () => {
       });
 
       if (response.ok) {
-        console.log("Message sent successfully!");
+        setStatus({ type: "success", message: "Message sent successfully!" });
         // Reset form
         setFormData({
           name: "",
@@ -52,16 +57,35 @@ export const ContactForm: React.FC = () => {
           message: "",
         });
       } else {
-        console.log("Failed to send message. Please try again.");
+        const errorData = await response.json();
+        setStatus({
+          type: "error",
+          message:
+            errorData.message || "Failed to send message. Please try again.",
+        });
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred. Please try again.");
+      setStatus({
+        type: "error",
+        message: "An error occurred. Please try again.",
+      });
     }
   };
 
   return (
     <div className="max-w-[75%] mx-auto p-6">
+      {status.type && (
+        <div
+          className={`mb-4 p-4 rounded ${
+            status.type === "success"
+              ? "bg-green-100 text-green-700"
+              : "bg-red-100 text-red-700"
+          }`}
+        >
+          {status.message}
+        </div>
+      )}
       <form className="space-y-4" onSubmit={handleSubmit}>
         <div className="grid grid-cols-2 gap-4">
           <div>
