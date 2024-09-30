@@ -22,17 +22,18 @@ export const About = () => {
             Our Story
           </h2>
           <p className="font-normal text-base mt-[10px] mb-[35px] text-[#7b7b7b] normal-case text-justify">
-            After many years of working with small and medium sized businesses
-            (SMEs) and venture incubators, our founder saw how hard early-stage
-            entrepreneurs, established business owners and funds seekers missed
-            opportunities for lack of comprehensive business plan.
-            Billion-dollar ideas were overlooked by investors for the lack of a
-            working business plan and articulate value proposition to the
-            customers. As a result, our founder came up with Pista Strategies to
-            help business owners thrive by communicating their value to the
-            customers. Our approach keeps your company at the center of
-            attention to get investors, win grants, increase brand awareness and
-            get customers.
+            After years of working with small and medium-sized businesses (SMEs)
+            and venture incubators, our founder witnessed countless early-stage
+            entrepreneurs, established business owners, and fund seekers miss
+            out on crucial grant opportunities due to the lack of a solid
+            business plan. Many million-dollar ideas were overlooked by
+            investors simply because they lacked a clear strategy and a
+            compelling value proposition. Driven by the desire to change this,
+            our founder created Pista Strategies—to help businesses not only
+            survive but thrive by clearly communicating their value to
+            customers. Our approach ensures your company remains the focal
+            point, attracting investors, securing grants, boosting brand
+            awareness, and winning over customers.
           </p>
         </div>
       </div>

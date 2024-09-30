@@ -14,17 +14,17 @@ export const HowCard = () => {
             </h2>
           </div>
           <h4 className="text-xl md:text-2xl font-bold text-[#10393b] mt-8 md:mt-0">
-            {step === 1 && "Provide us with the Details"}
-            {step === 2 && "Pick The Suitable Plan"}
-            {step === 3 && "We Proceed Your Request"}
+            {step === 1 && "Consultation"}
+            {step === 2 && "Partnership"}
+            {step === 3 && "Subscription"}
           </h4>
           <p className="text-sm md:text-base font-normal text-[#7b7b7b] mt-4">
             {step === 1 &&
-              "Share your specific needs and requirements so we can tailor our approach to suit you."}
+              "This model is for bespoke solutions. We discuss with client on the specific business needs then tailor solutions to the specific requirements. Pricing is arrived at depending on client’s scope of work."}
             {step === 2 &&
-              "Choose the plan that best fits your goals and budget from our range of options."}
+              "This is a collaborative approach where we build solutions through strategic partnership. Could be business incubators, businesses, or individuals."}
             {step === 3 &&
-              "Our team will carefully review and process your request to ensure the best outcome."}
+              "This model is perfect for clients who are looking for a real-time alter to an already existing solution. We focus on your core business and specific requirements."}
           </p>
         </div>
       ))}
