@@ -46,10 +46,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, children }) => {
 const FAQSection: React.FC = () => {
   return (
     <div className="w-full mx-auto p-6 bg-orange-50 flex flex-col justify-center items-center gap-4">
-      <div className="text-[#ef8450] font-medium bg-[#ffffff38] text-base uppercase">
-        FAQ
-      </div>
-      <h2 className="text-4xl md:text-6xl font-bold mt-[10px] mb-[30px] text-[#10393b]">
+      <h2 className="text-4xl md:text-6xl font-bold mt-[10px] mb-[30px] text-[#ef8450]">
         Frequently Asked Questions
       </h2>
       <FAQItem question="Which services do you offer?">
