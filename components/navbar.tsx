@@ -52,11 +52,12 @@ export const Navbar = () => {
             href="/"
           >
             <Image
+              src="/logo2.png"
               alt="Logo Image"
-              height={270}
-              src="/logo2.PNG"
               width={270}
-              priority
+              height={270}
+              placeholder="blur"
+              blurDataURL="#FFFF00"
             />
             {/* <Logo /> */}
             {/* <p className="font-bold text-inherit capitalize">

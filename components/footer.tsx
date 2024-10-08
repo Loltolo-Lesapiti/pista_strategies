@@ -9,7 +9,14 @@ const FooterComponent = () => {
           <div className="flex items-center mb-4">
             {/* <Logo />
             <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3> */}
-            <Image src="/logo2.PNG" alt="Logo Image" width={270} height={270} />
+            <Image
+              src="/logo2.png"
+              alt="Logo Image"
+              width={270}
+              height={270}
+              placeholder="blur"
+              blurDataURL="#FFFF00"
+            />
           </div>
           <p className="text-base text-[#7b7b7b]">
             We partner with you throughout your journey. We will help you
