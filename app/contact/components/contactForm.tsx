@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import { useFormState } from "react-dom";
 
 import CustomButton from "@/components/buttonUi";
+import contactFormAction from "@/app/data/contact";
 
 interface FormData {
   name: string;
@@ -10,83 +11,20 @@ interface FormData {
   subject: string;
   message: string;
 }
+const INITIAL_STATE = {
+  data: null,
+};
 
 export const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-  const [status, setStatus] = useState<{
-    type: "success" | "error" | null;
-    message: string;
-  }>({ type: null, message: "" });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { id, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [id]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus({ type: null, message: "" });
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setStatus({ type: "success", message: "Message sent successfully!" });
-        // Reset form
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-      } else {
-        const errorData = await response.json();
-        setStatus({
-          type: "error",
-          message:
-            errorData.message || "Failed to send message. Please try again.",
-        });
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setStatus({
-        type: "error",
-        message: "An error occurred. Please try again.",
-      });
-    }
-  };
+  const [formState, formAction] = useFormState(
+    contactFormAction,
+    INITIAL_STATE
+  );
+  console.log(formState);
 
   return (
     <div className="max-w-[75%] mx-auto p-6">
-      {status.type && (
-        <div
-          className={`mb-4 p-4 rounded ${
-            status.type === "success"
-              ? "bg-green-100 text-green-700"
-              : "bg-red-100 text-red-700"
-          }`}
-        >
-          {status.message}
-        </div>
-      )}
-      <form className="space-y-4" onSubmit={handleSubmit}>
+      <form action={formAction} className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block mb-1" htmlFor="name">
@@ -97,8 +35,7 @@ export const ContactForm: React.FC = () => {
               id="name"
               placeholder="Ex. Purity Mwende"
               type="text"
-              value={formData.name}
-              onChange={handleChange}
+              name="name"
               required
             />
           </div>
@@ -113,8 +50,7 @@ export const ContactForm: React.FC = () => {
               id="email"
               placeholder="example@mail.com"
               type="email"
-              value={formData.email}
-              onChange={handleChange}
+              name="email"
               required
             />
           </div>
@@ -129,8 +65,7 @@ export const ContactForm: React.FC = () => {
               id="phone"
               placeholder="(123) 456 - 789"
               type="tel"
-              value={formData.phone}
-              onChange={handleChange}
+              name="phone"
               required
             />
           </div>
@@ -143,8 +78,7 @@ export const ContactForm: React.FC = () => {
               id="subject"
               placeholder="What we can help with?"
               type="text"
-              value={formData.subject}
-              onChange={handleChange}
+              name="subject"
               required
             />
           </div>
@@ -158,8 +92,7 @@ export const ContactForm: React.FC = () => {
             id="message"
             placeholder="Leave Extra Message..."
             rows={6}
-            value={formData.message}
-            onChange={handleChange}
+            name="message"
             required
           />
         </div>

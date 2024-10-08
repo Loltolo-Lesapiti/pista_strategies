@@ -1,5 +1,9 @@
+"use client";
+
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import { Chip } from "@nextui-org/chip";
+
+import { FadeInContainer, CardAnimation } from "./animation";
 
 export const Services = () => {
   const services = [
@@ -37,28 +41,32 @@ export const Services = () => {
         <h2 className="text-4xl md:text-6xl text-center font-bold mb-12 text-[#10393b]">
           Our Services
         </h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <FadeInContainer className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <Card
+            <CardAnimation
               key={index}
-              className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="h-full"
             >
-              <CardHeader className="bg-[#10393b] text-white p-6">
-                <h3 className="text-2xl font-bold">{service.title}</h3>
-              </CardHeader>
-              <CardBody className="p-6">
-                <div className="mb-4 flex flex-wrap gap-2">
-                  {service.duties.map((duty, dutyIndex) => (
-                    <Chip key={dutyIndex} color="warning" variant="flat">
-                      {duty}
-                    </Chip>
-                  ))}
-                </div>
-                <p className="text-gray-600 mt-4">{service.description}</p>
-              </CardBody>
-            </Card>
+              <Card className="bg-white shadow-lg h-full flex flex-col">
+                <CardHeader className="bg-[#10393b] text-white p-6">
+                  <h3 className="text-2xl font-bold">{service.title}</h3>
+                </CardHeader>
+                <CardBody className="p-6">
+                  <div className="mb-4 flex flex-wrap gap-2">
+                    {service.duties.map((duty, dutyIndex) => (
+                      <Chip key={dutyIndex} color="warning" variant="flat">
+                        {duty}
+                      </Chip>
+                    ))}
+                  </div>
+                  <p className="text-gray-600 mt-4">{service.description}</p>
+                </CardBody>
+              </Card>
+            </CardAnimation>
           ))}
-        </div>
+        </FadeInContainer>
       </div>
     </div>
   );
