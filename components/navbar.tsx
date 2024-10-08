@@ -15,7 +15,6 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
-import logoImage from "./logo2.png";
 import CustomButton from "@/components/buttonUi";
 
 export const Navbar = () => {
@@ -52,7 +51,7 @@ export const Navbar = () => {
             href="/"
           >
             <Image
-              src={logoImage}
+              src="/logo2.PNG"
               alt="Logo Image"
               width={270}
               height={270}

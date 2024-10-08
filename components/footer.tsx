@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import logoImage from "./logo2.png";
-
 const FooterComponent = () => {
   return (
     <footer className="px-4 py-8 md:px-8">
@@ -12,7 +10,7 @@ const FooterComponent = () => {
             {/* <Logo />
             <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3> */}
             <Image
-              src={logoImage}
+              src="/logo2.PNG"
               alt="Logo Image"
               width={270}
               height={270}
