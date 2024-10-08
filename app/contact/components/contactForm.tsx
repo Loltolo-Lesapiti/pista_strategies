@@ -33,7 +33,7 @@ export const ContactForm: React.FC = () => {
             <input
               className="w-full px-3 border border-gray-300 py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
               id="name"
-              placeholder="Ex. Purity Mwende"
+              placeholder="Ex. Jon Allan"
               type="text"
               name="name"
               required

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import logoImage from "/public/logo2.PNG";
+
 const FooterComponent = () => {
   return (
     <footer className="px-4 py-8 md:px-8">
@@ -10,12 +12,11 @@ const FooterComponent = () => {
             {/* <Logo />
             <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3> */}
             <Image
-              src="/logo2.PNG"
+              src={logoImage}
               alt="Logo Image"
               width={270}
               height={270}
-              placeholder="blur"
-              blurDataURL="#FFFF00"
+              priority
             />
           </div>
           <p className="text-base text-[#7b7b7b]">

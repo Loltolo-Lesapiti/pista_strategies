@@ -15,7 +15,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
-// import { Logo } from "@/components/icons";
+import logoImage from "/public/logo2.PNG";
 import CustomButton from "@/components/buttonUi";
 
 export const Navbar = () => {
@@ -52,12 +52,11 @@ export const Navbar = () => {
             href="/"
           >
             <Image
-              src="/logo2.PNG"
+              src={logoImage}
               alt="Logo Image"
               width={270}
               height={270}
-              placeholder="blur"
-              blurDataURL="#FFFF00"
+              priority
             />
             {/* <Logo /> */}
             {/* <p className="font-bold text-inherit capitalize">

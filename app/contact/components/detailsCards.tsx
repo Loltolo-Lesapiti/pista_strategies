@@ -4,17 +4,17 @@ export const ContactDetails = () => {
     {
       icon: "/contact1.webp",
       title: "Utawala, By-Pass",
-      lines: ["Mwangaza Court, Off Shooters Road,", "House, N-45"],
+      lines: ["Utawala By-Pass, Off Shooters Road,"],
     },
     {
       icon: "/contact2.webp",
       title: "Send an email",
-      lines: ["pistastrategies@gmail.com", "puritymwendeh@gmail.com"],
+      lines: ["pistastrategies@gmail.com"],
     },
     {
       icon: "/contact3.webp",
       title: "Call us",
-      lines: ["(+254) 758-215-549", "(+254) 782 - 311 - 019"],
+      lines: ["(+254) 123 - 456 - 789", "(+254) 123 - 456 - 789"],
     },
   ];
 
