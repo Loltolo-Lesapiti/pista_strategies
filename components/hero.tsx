@@ -5,29 +5,16 @@ import { motion } from "framer-motion";
 
 import CustomButton from "./buttonUi";
 
-const MotionImage = motion(Image);
-
 export const Hero = () => {
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <MotionImage
+        <Image
           alt="Hero Image"
           src="/test.webp"
           fill
           className="object-cover"
           priority
-          initial={{ scale: 1.1, x: -20 }}
-          animate={{
-            scale: 1.5,
-            x: 20,
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            repeatType: "reverse",
-            ease: "linear",
-          }}
         />
         <div className="absolute inset-0 bg-[#10393b] bg-opacity-50 backdrop-filter backdrop-blur-sm"></div>
       </div>
