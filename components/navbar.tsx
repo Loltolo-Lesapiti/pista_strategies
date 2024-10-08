@@ -15,7 +15,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
-import logoImage from "/public/logo2.PNG";
+import logoImage from "/logo2.PNG";
 import CustomButton from "@/components/buttonUi";
 
 export const Navbar = () => {
