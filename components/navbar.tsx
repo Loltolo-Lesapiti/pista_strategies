@@ -54,7 +54,7 @@ export const Navbar = () => {
             <Image
               alt="Logo Image"
               height={270}
-              src="/logo2.png"
+              src="/logo2.PNG"
               width={270}
               priority
             />
