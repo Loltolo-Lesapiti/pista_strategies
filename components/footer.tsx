@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import logoImage from "/logo2.PNG";
+import logoImage from "/logo2.png";
 
 const FooterComponent = () => {
   return (
