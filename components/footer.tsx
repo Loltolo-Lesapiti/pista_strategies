@@ -10,7 +10,7 @@ const FooterComponent = () => {
             {/* <Logo />
             <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3> */}
             <Image
-              src="/logo2.png"
+              src="/logo2.PNG"
               alt="Logo Image"
               width={270}
               height={270}
