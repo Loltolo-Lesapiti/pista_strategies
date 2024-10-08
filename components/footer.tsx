@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
+
+import ResponsiveNavbarLogo from "./logo";
 
 const FooterComponent = () => {
   return (
@@ -7,15 +8,15 @@ const FooterComponent = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-1 md:col-span-1">
           <div className="flex items-center mb-4">
-            {/* <Logo />
-            <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3> */}
-            <Image
-              src="/logo2.PNG"
-              alt="Logo Image"
-              width={270}
-              height={270}
-              priority
-            />
+            <ResponsiveNavbarLogo />
+            {/* <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3> */}
+            {/* // <Image
+            //   src="/logo2.PNG"
+            //   alt="Logo Image"
+            //   width={270}
+            //   height={270}
+            //   priority
+            // /> */}
           </div>
           <p className="text-base text-[#7b7b7b]">
             We partner with you throughout your journey. We will help you

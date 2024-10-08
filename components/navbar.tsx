@@ -12,10 +12,10 @@ import {
 } from "@nextui-org/navbar";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
 import CustomButton from "@/components/buttonUi";
+import ResponsiveNavbarLogo from "./logo";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,14 +50,14 @@ export const Navbar = () => {
             className="flex justify-start items-center gap-1"
             href="/"
           >
-            <Image
+            {/* <Image
               src="/logo2.PNG"
               alt="Logo Image"
               width={270}
               height={270}
               priority
-            />
-            {/* <Logo /> */}
+            /> */}
+            <ResponsiveNavbarLogo />
             {/* <p className="font-bold text-inherit capitalize">
               Pista Strategies
             </p> */}
