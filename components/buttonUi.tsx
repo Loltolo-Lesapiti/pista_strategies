@@ -29,7 +29,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
         as="a"
         className={clsx(
           "relative overflow-hidden",
-          "text-base font-normal capitalize p-8",
+          "text-base font-normal capitalize p-6",
           "border-2 border-[#ef8450]",
           "transition-colors duration-300 ease-in-out",
           "group",

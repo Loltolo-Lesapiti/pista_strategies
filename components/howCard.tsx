@@ -1,10 +1,13 @@
-import React from "react";
+"use client";
+import { CardAnimation, FadeInItem, FadeInContainer } from "./animation";
 
 export const HowCard = () => {
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-y-14 lg:grid-cols-3">
       {[1, 2, 3].map((step, index) => (
-        <div
+        <CardAnimation
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 300 }}
           key={index}
           className="relative flex flex-col justify-center items-center gap-4 w-full bg-white text-center border-white shadow-lg rounded-[15px] py-16 px-4 h-[200px] md:h-[270px] md:px-8 mb-16 md:mb-0"
         >
@@ -26,7 +29,7 @@ export const HowCard = () => {
             {step === 3 &&
               "This model is perfect for clients who are looking for a real-time alter to an already existing solution. We focus on your core business and specific requirements."}
           </p>
-        </div>
+        </CardAnimation>
       ))}
     </div>
   );
