@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -45,15 +46,21 @@ export const Navbar = () => {
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink passHref className="relative w-fit" href="/">
+          <NextLink
+            passHref
+            className="flex justify-start items-center gap-1"
+            href="/"
+          >
             <Image
-              src="/logo2.PNG"
+              src="/logo.png"
               alt="Logo Image"
-              width={270}
-              height={270}
+              width={26}
+              height={26}
               priority
-              className="w-[120px] h-auto sm:w-[180px] md:w-[220px] lg:w-[270px] transition-all duration-300"
             />
+            <p className="font-bold text-inherit capitalize">
+              Pista Strategies
+            </p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>

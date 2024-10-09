@@ -56,7 +56,7 @@ export const Services = () => {
                 <CardBody className="p-6">
                   <div className="mb-4 flex flex-wrap gap-2">
                     {service.duties.map((duty, dutyIndex) => (
-                      <Chip key={dutyIndex} color="danger" variant="flat">
+                      <Chip key={dutyIndex} color="warning" variant="flat">
                         {duty}
                       </Chip>
                     ))}
