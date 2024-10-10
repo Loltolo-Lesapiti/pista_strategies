@@ -1,41 +1,46 @@
-# Pista Strategies: Your partner from an idea to a market leader.
+# Strategic Business Consulting website
 
-Pista Strategies is a business writing organization that helps small and medium sized businesses and professionals in putting their foot forward. We achieve your goals by developing personalized business plans, proposals, conducting web research, pitch deck among other services.
-We are a group of experienced consultants with proven track record of success in the field.
+A modern, high-performance website built for a business consulting agency using Next.js, TypeScript, and Tailwind CSS. The platform features responsive design, optimized SEO, and an intuitive service showcase interface.
 
-## Our Mission:
+## Key Features
 
-## Our values
+- Responsive design for seamless cross-device experience
+- Optimized performance and SEO
+- Interactive contact system
+- Professional service presentation
 
-- Confidentiality
-- Professionalism
-- Simplicity
-- Efficiency
+## Built with
 
-## Our Story
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Framer motion for animations
 
-After working for half a decade with small and medium sized businesses, founder saw how hard founder and visionary entrepreneurs missed opportunities for the inability to put their business ideas down through writing, entrepreneurs who had billion-dollar ideas missing important investments for the inability to capture their value proposition to investors. As a result, our founder came up with Pista Strategies to help small business owners thrive. Our approach keeps your company at the center of attention to get investors, win grants, increase brand awareness and make others understand your value to your customers with ease.
-Why Work with us
-Our unique approach allows our clients to rapidly scale their business,
+## Additional Tools
 
-## Our Services
+- WebHint
+- Stylelint
+- ESlint
+- Webpack
+- VS Code
 
-YBusiness Plan Development:
-We will help you create a customized comprehensive business plan, including market research, financial projections, Market Analysis, and strategic Operational plan
+## Live demo
 
-Proposal Writing:
-We craft proposals for funding, partnerships, contracts and others.
+You can watch [here](pista-strategies-jcss.vercel.app) a live demo of our project.
 
-Grants Writing
-We are specialized in writing grant proposals for non-profits and others
+## Authors
 
-Pitch Deck Creation:
-We design unique pitch decks for presentation to investors and other stakeholders
-Consulting and Advisory:
-We offer consulting services to revise and improve existing business plans and proposals.
+👤 **Petro Loltolo Lesapiti**
 
-Additional strategic documents:
-We help in writing other strategic documents such as operational plans, marketing strategies and executive summaries.
+- GitHub: [@petrolesapiti](https://github.com/Loltolo-Lesapiti)
+- LinkedIn: [@petrolesapiti](https://www.linkedin.com/in/petrolesapitiloltolo/)
 
-Contact us: Email, phone number.
-Get in touch Today: This should be a button for the customer to fill in where we will get the notification.
+This project was developed independently for Pista Strategies, a business writing agency focused on empowering SMEs.
+
+## Acknowledgments
+
+- Thanks to Kitpro for original design.
+
+## 📝 License
+
+## This project is [MIT](./MIT.md) licensed.
