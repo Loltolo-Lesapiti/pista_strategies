@@ -8,7 +8,7 @@ const FooterComponent = () => {
         <div className="col-span-1 md:col-span-1">
           <div className="flex items-center mb-4 bg-[#10393b] text-white p-2">
             <Image
-              src="/logo.png"
+              src="/logoV2.png"
               alt="Logo Image"
               width={26}
               height={26}

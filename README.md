@@ -35,8 +35,6 @@ You can watch [here](pista-strategies-jcss.vercel.app) a live demo of our projec
 - GitHub: [@petrolesapiti](https://github.com/Loltolo-Lesapiti)
 - LinkedIn: [@petrolesapiti](https://www.linkedin.com/in/petrolesapitiloltolo/)
 
-This project was developed independently for Pista Strategies, a business writing agency focused on empowering SMEs.
-
 ## Acknowledgments
 
 - Thanks to Kitpro for original design.
@@ -44,3 +42,7 @@ This project was developed independently for Pista Strategies, a business writin
 ## 📝 License
 
 ## This project is [MIT](./MIT.md) licensed.
+
+---
+
+This project was developed independently for **Pista Strategies**, a business writing agency focused on empowering SMEs.
