@@ -52,7 +52,7 @@ export const Navbar = () => {
             href="/"
           >
             <Image
-              src="/logoV2.png"
+              src="/logo.png"
               alt="Logo Image"
               width={26}
               height={26}
