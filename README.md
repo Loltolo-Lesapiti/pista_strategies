@@ -26,7 +26,7 @@ A modern, high-performance website built for a business consulting agency using 
 
 ## Live demo
 
-You can watch [here](pista-strategies-jcss.vercel.app) a live demo of our project.
+You can watch [here](https://pista-strategies-jcss.vercel.app/) a live demo of our project.
 
 ## Authors
 
