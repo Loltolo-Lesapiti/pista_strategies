@@ -9,7 +9,7 @@ export const About = () => {
             Who We Are
           </h2>
           <p className="font-normal text-base mt-[10px] mb-[35px] text-[#7b7b7b] normal-case text-justify">
-            Pista Strategies is a business writing agency committed to helping
+            Pista Logistics is a business writing organization committed to helping
             small and medium-sized businesses achieve their full potential. With
             a team of experienced consultants and a results-driven approach, we
             consistently exceed expectations and empower our clients to succeed.
@@ -29,10 +29,10 @@ export const About = () => {
             business plan. Many million-dollar ideas were overlooked by
             investors simply because they lacked a clear strategy and a
             compelling value proposition. Driven by the desire to change this,
-            our founder created Pista Strategies—to help businesses not only
-            survive but thrive by clearly communicating their value to
-            customers. Our approach ensures your company remains the focal
-            point, attracting investors, securing grants, boosting brand
+            our founder created Pista Logistics to help businesses not only
+            survive but thrive by effectively communicating their value to
+            customers. Our approach ensures your business remains the focal
+            point, attracting investors, securing grants, enhancing brand
             awareness, and winning over customers.
           </p>
         </div>

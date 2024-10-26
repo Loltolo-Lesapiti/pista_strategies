@@ -51,9 +51,9 @@ export const Navbar = () => {
             className="flex justify-start items-center gap-1"
             href="/"
           >
-            <Image src="/logo.PNG" alt="Logo Image" width={26} height={26} />
+            <Image src="/plogo2.PNG" alt="Logo Image" width={26} height={26} />
             <p className="font-bold text-inherit capitalize">
-              Pista Strategies
+              Pista Logistics
             </p>
           </NextLink>
         </NavbarBrand>
