@@ -21,10 +21,7 @@ export const Statements = () => {
             Vision Statement
           </h4>
           <p className="text-base font-normal text-[#7b7b7b] md:pr-4">
-            To be leading partner for SMEs and entrepreneurs, transforming ideas
-            into market-leading successes through strategic business writing and
-            consulting.
-          </p>
+            To be the leading partner for SMEs and entrepreneurs, turning ideas into market-leading successes through expert business writing services and strategic consulting. </p>
         </div>
 
         <div className="flex flex-col justify-center items-start gap-[16px] mb-8 w-full md:mb-0 w-1/3">
@@ -41,10 +38,9 @@ export const Statements = () => {
             Mission Statement
           </h4>
           <p className="text-base font-normal text-[#7b7b7b] md:pr-4">
-            To empower SMEs and entrepreneurs to achieve their full potential by
-            delivering tailored business plans, proposals and strategic
-            documents that secure funding, drive growth and position our clients
-            for success.
+            To empower SMEs and entrepreneurs to reach their full potential through
+            tailored business plans, proposals and strategic
+            documents that secure funding, drive growth and position them for success.
           </p>
         </div>
       </div>

@@ -67,7 +67,7 @@ export const ContactForm: React.FC = () => {
             <input
               className="w-full px-2 sm:px-3 border border-gray-300 py-3 sm:py-4 rounded-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500"
               id="phone"
-              placeholder="(123) 456 - 789"
+              placeholder="(+254) 115-854-143"
               type="tel"
               name="phone"
               required

@@ -17,7 +17,7 @@ export const About = () => {
           Who We Are
         </h2>
         <p className="font-normal text-base mt-[10px] mb-[35px] max-w-fit text-[#7b7b7b] normal-case text-justify">
-          Pista Strategies is a business writing agency committed to helping
+          Pista Logistics is a business writing organization committed to helping
           small and medium-sized businesses achieve their full potential. With a
           team of experienced consultants and a results-driven approach, we
           consistently exceed expectations and empower our clients to succeed.

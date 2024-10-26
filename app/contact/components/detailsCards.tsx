@@ -3,8 +3,8 @@ export const ContactDetails = () => {
   const details = [
     {
       icon: "/contact1.webp",
-      title: "Utawala, By-Pass",
-      lines: ["Utawala By-Pass, Off Shooters Road,"],
+      title: "North Airport Road",
+      lines: ["TEJ Center, off  Eastern bypass,"],
     },
     {
       icon: "/contact2.webp",
@@ -14,7 +14,7 @@ export const ContactDetails = () => {
     {
       icon: "/contact3.webp",
       title: "Call us",
-      lines: ["(+254) 123 - 456 - 789", "(+254) 123 - 456 - 789"],
+      lines: ["(+254) 115 - 854 - 143", ],
     },
   ];
 
