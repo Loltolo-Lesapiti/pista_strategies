@@ -7,7 +7,7 @@ const FooterComponent = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-1 md:col-span-1">
           <div className="flex items-center mb-4 bg-[#10393b] text-white p-2">
-            <Image src="/logo.png" alt="Logo Image" width={26} height={26} />
+            <Image src="/logo.PNG" alt="Logo Image" width={26} height={26} />
             <h3 className="ml-2 text-xl font-bold">Pista Strategies</h3>
           </div>
           <p className="text-base text-[#7b7b7b]">
