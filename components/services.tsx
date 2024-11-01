@@ -9,29 +9,21 @@ export const Services = () => {
   const services = [
     {
       title: "Business Writing",
-      duties: [
-        "Business Plan for SMEs",
-        "Business Proposals",
-        "Investor Pitch Deck",
-      ],
+      duties: ["Business plan", "Business Proposal"],
       description:
-        "We craft personalized business plans with a clear roadmap on how to grow your business, including market analysis, financial projections & operational plan.",
+        "We craft personalized business plans with a clear roadmap on how to grow your business, including market analysis, financial projections & operational plans, and marketing plans.",
     },
     {
       title: "Grant Writing",
-      duties: ["Grant Writing", "Grant Web Research", "Grant Application"],
+      duties: ["Grant Writing", "Grant Application"],
       description:
-        "We craft visually compelling pitch decks that communicate your vision and value proposition to investors and other stakeholders.",
+        "We take the client's burden of writing and submitting proposals to request funding from government agencies, foundations, and other organizations.",
     },
     {
       title: "Market Research",
-      duties: [
-        "Comprehensive Market Research",
-        "Competitor Research",
-        "SWOT Analysis",
-      ],
+      duties: ["Comprehensive Market Research", "Industry Analysis"],
       description:
-        "We do comprehensive web research tailored to your industry, including competitor analysis, industry analysis, customer insights, and a SWOT analysis helping you understand your industry better.",
+        "We do comprehensive web research that tailored to your business, including competitor analysis, industry analysis, customer insights, and a SWOT analysis. This will help you understand your industry better.",
     },
   ];
 
